@@ -1,0 +1,30 @@
+alias ls='ls -G'
+alias ll='ls -Al'
+alias mkdir='mkdir -p'
+alias which='type -a'
+alias ..='cd ..'
+
+alias du='du -kh'
+alias df='df -kTh'
+
+alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
+alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
+
+alias vim='mvim -v'
+
+alias r='rails'
+alias b='bundle exec'
+alias bo='bundle open'
+alias bi='bundle install'
+alias c='cap'
+alias gs='bundle exec guard start'
+alias f='git flow feature'
+alias release='git flow release'
+alias rk='rake'
+alias mig='rake db:migrate db:test:prepare'
+
+alias gup='git smart-pull'
+alias gm='git smart-merge'
+alias gl='git smart-log'
+
+alias ssh='TERM=xterm-256color ssh'

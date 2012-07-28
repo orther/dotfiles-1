@@ -1,0 +1,14 @@
+"1.0rc1
+
+loadplugins '\.(js|css|penta)$'
+group user
+set hintkeys=asdfgjklhiterno
+hi Hint font: bold 14px "Droid Sans Mono", monospace !important; margin: -.2ex; padding: 2px; outline: 1px solid rgba(0, 0, 0, .5); background:  rgba(255, 248, 231, .9); color: black; text-transform: uppercase;
+
+map gb :emenu GMarks.Add/Edit Bookmark<CR>
+
+set passkeys+=mail.google.com:jkroae<CR>,gi
+set passkeys+=www.pivotaltracker.com:a
+set passkeys+=www.google.com/reader:jk<space>
+
+" vim: set ft=pentadactyl:
