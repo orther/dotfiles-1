@@ -45,7 +45,7 @@
   dh = diff HEAD^
   ru = remote update --prune
 	prd = pull-request -b develop
-  rho = !git reset --hard origin/`bash -c current_branch`
+  rho = !git stash -u 2>&1 > /dev/null && git reset --hard origin/`bash -c current_branch`
 
 [format]
     pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
