@@ -32,7 +32,7 @@
   ff = merge --ff-only
   pullff = pull --ff-only
   noff = merge --no-ff
-  l = log --graph --abbrev-commit --date=relative 
+  l = log --graph --abbrev-commit --date=relative
   la = !git l --all
   div = divergence
   gn = goodness
@@ -45,6 +45,7 @@
   dh = diff HEAD^
   ru = remote update --prune
 	prd = pull-request -b develop
+  rho = !git reset --hard origin/`bash -c current_branch`
 
 [format]
     pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
