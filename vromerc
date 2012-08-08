@@ -1,3 +1,3 @@
-set disablesites=mail.google.com, reader.google.com // don’t run Vrome in those sites
+set disablesites=mail.google.com, reader.google.com, www.google.com/reader // don’t run Vrome in those sites
 set hintkeys=jlkhfsdagwerui
 set hintkeysdisplayuppercase=1
