@@ -26,4 +26,5 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock showhidden -bool true
+defaults write -g ApplePressAndHoldEnabled -bool false
 
