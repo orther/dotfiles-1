@@ -1,6 +1,6 @@
 eval `hub alias -s bash`
 
-set -o vi
+# set -o vi
 
 export BASH_ENV='~/.bash_env'
 export EDITOR='mvim -v'
