@@ -2,7 +2,7 @@ eval `hub alias -s bash`
 
 # set -o vi
 
-export BASH_ENV='~/.bash_env'
+export BASH_ENV='~/.bash/env'
 export EDITOR='mvim -v'
 export VISUAL='mvim -v'
 export TM_GIT=/usr/local/bin/git
@@ -16,7 +16,7 @@ export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 #complete -o default -o nospace -F __git_flow_feature f
 #complete -o default -o nospace -F __git_flow_release release
 
-source ~/.bashcolors
+source ~/.bash/colors
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -44,7 +44,7 @@ export HISTSIZE=10000
 # Append to the history file when exiting instead of overwriting it
 shopt -s histappend
 
-source ~/.bashaliases
+source ~/.bash/aliases
 if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi

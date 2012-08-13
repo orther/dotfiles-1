@@ -1,2 +1,2 @@
 shopt -s expand_aliases
-source ~/.bashaliases
+source ~/.bash/aliases
