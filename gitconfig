@@ -83,3 +83,7 @@
 	trustExitCode = true
 [init]
 	templatedir = ~/.git_template
+[browser "ff"]
+  cmd = open -a Firefox.app
+[web]
+  browser = ff
