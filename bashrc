@@ -56,7 +56,7 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
 # Enter bracketed paste mode, see .inputrc for how to ignore it in bash
-[ -s "$ITERM_PROFILE" ] && printf "\e[?2004h"
+[ -n "$ITERM_PROFILE" ] && printf "\e[?2004h"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
