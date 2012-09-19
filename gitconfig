@@ -16,7 +16,7 @@
   bra = branch -a
   cp = cherry-pick
   m = merge --no-ff --no-commit
-  f = fetch --prune --all
+  f = fetch --prune
   pre = !git fetch --prune --all && git rebase
   puo = push -u origin HEAD
   cleanbr = !git branch -r --no-color --merged | grep -v \"/\\(master\\|develop\\|integration\\)$\" | sed \"s/\\// :/\" | xargs -L1 git push && git branch --no-color --merged | grep -v \" \\(master\\|develop\\|integration\\)$\" | xargs -L1 git branch -d
@@ -37,7 +37,7 @@
   div = divergence
   gn = goodness
   gnc = goodness --cached
-  fa = fetch --all
+  fa = fetch --prune --all
   poh = push origin HEAD
   puoh = push -u origin HEAD
   b = branch
