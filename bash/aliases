@@ -23,6 +23,7 @@ alias release='git flow release'
 alias rk='rake'
 alias mig='rake db:migrate db:test:prepare'
 
+alias g=hub
 alias gup='git smart-pull'
 alias gm='git smart-merge'
 alias gl='git smart-log'
