@@ -40,9 +40,9 @@ function current_branch {
 }
 
 function pause_guard {
-  ps ax | grep [g]uard | grep -v pause | awk '{print $1}' | xargs kill -USR1
+  ps ax | grep [^_][g]uard | awk '{print $1}' | xargs kill -USR1
 }
 
 function unpause_guard {
-  ps ax | grep [g]uard | grep -v pause | awk '{print $1}' | xargs kill -USR2
+  ps ax | grep [^_][g]uard | awk '{print $1}' | xargs kill -USR2
 }
