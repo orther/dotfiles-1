@@ -58,5 +58,6 @@ export RUBY_HEAP_FREE_MIN=500000
 # Enter bracketed paste mode, see .inputrc for how to ignore it in bash
 [ -n "$ITERM_PROFILE" ] && printf "\e[?2004h"
 
+[[ -s "$HOME/nvm/nvm.sh" ]] && source "$HOME/nvm/nvm.sh"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
