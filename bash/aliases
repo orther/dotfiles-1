@@ -26,11 +26,26 @@ alias rk='rake'
 alias mig='rake db:migrate db:test:prepare'
 
 alias g=hub
+complete -F __git_wrap__git_main g
+
 alias gup='git smart-pull'
 alias gm='git smart-merge'
 alias gl='git smart-log'
 
+alias gco="git_checkout"
+complete -o bashdefault -o default -o nospace -F __git_wrap_git_checkout gco
+
 alias ssh='TERM=xterm-256color ssh'
+
+function __git_wrap_git_checkout {
+  __git_func_wrap _git_checkout
+}
+
+function git_checkout {
+  pause_guard
+  git checkout $*
+  unpause_guard
+}
 
 function current_branch {
   branch_name="$(git symbolic-ref HEAD 2>/dev/null)" ||
