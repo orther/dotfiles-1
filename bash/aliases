@@ -37,6 +37,11 @@ complete -o bashdefault -o default -o nospace -F __git_wrap_git_checkout gco
 
 alias ssh='TERM=xterm-256color ssh'
 
+# Autocomplete for my "git co"
+function _git_co {
+  _git_checkout $*
+}
+
 function __git_wrap_git_checkout {
   __git_func_wrap _git_checkout
 }
