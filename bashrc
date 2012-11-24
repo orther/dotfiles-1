@@ -46,15 +46,13 @@ export HISTSIZE=10000
 shopt -s histappend
 
 source ~/.bash/aliases
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
+[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_FREE_MIN=500000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_FREE_MIN=500000
+export RUBY_GC_MALLOC_LIMIT=100000000
 
 # Enter bracketed paste mode, see .inputrc for how to ignore it in bash
 [ -n "$ITERM_PROFILE" ] && printf "\e[?2004h"
