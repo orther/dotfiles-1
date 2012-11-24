@@ -11,5 +11,6 @@ map ,t :toolbartoggle Navigation Toolbar<CR>
 set passkeys+=mail.google.com:jkroae<CR>,gi
 set passkeys+=www.pivotaltracker.com:a
 set passkeys+=www.google.com/reader:jk<space>
+set passkeys+=github.com:jk<CR>
 
 " vim: set ft=pentadactyl:
