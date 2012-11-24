@@ -19,3 +19,5 @@ bundler_stubs
 .bundle
 .vimrc
 .rspec
+.noexec.yaml
+bundle/
