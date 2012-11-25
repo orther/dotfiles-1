@@ -19,5 +19,7 @@ bundler_stubs
 .bundle
 .vimrc
 .rspec
+.ruby-version
+.rvmrc
 .noexec.yaml
 bundle/
