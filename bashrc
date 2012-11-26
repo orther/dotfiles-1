@@ -9,7 +9,7 @@ export TM_GIT=/usr/local/bin/git
 
 export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
 export RSPEC_FORMAT=Fuubar
-export PARALLEL_TEST_PROCESSORS=6
+export PARALLEL_TEST_PROCESSORS=2
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/.bin:$PATH:$HOME/.rvm/bin
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
