@@ -34,22 +34,19 @@ alias gl='git smart-log'
 
 alias ssh='TERM=xterm-256color ssh'
 
-# Autocomplete for my "git co"
-function _git_co {
-  _git_checkout $*
-}
-
-function git_checkout {
-  pause_guard
-  git checkout $*
-  unpause_guard
-}
-
 function current_branch {
   branch_name="$(git symbolic-ref HEAD 2>/dev/null)" ||
     branch_name="(unnamed branch)"     # detached HEAD
 
   echo ${branch_name##refs/heads/}
+}
+
+# Pause guard while checking out. Add below alias to .gitconfig:
+# co = "!bash -c 'pause_guard' ; git checkout $* ; bash -c 'unpause_guard'"
+
+# Autocomplete for my "git co"
+function _git_co {
+  _git_checkout $*
 }
 
 function pause_guard {
