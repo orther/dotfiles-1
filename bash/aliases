@@ -15,9 +15,13 @@ alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias vim='mvim -v'
 
 alias r='rails'
+alias z='zeus'
 alias b='bundle exec'
 alias bo='bundle open'
-alias bi='bundle install && ( ( [ `rvm-prompt g` ] && bundle clean --force ); true )'
+# We want to clean all of our gems sometimes, but not every time.
+# This will clean gems 10% of the time.
+# Game theory.
+alias bi='bundle install && ( ( [ $RANDOM -gt 29490 ] && [ `rvm-prompt g` ] && bundle clean --force ); true )'
 alias c='cap'
 alias gs='guard start'
 alias f='git flow feature'
