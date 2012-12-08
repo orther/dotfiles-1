@@ -12,7 +12,7 @@ alias df='df -kTh'
 alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 
-alias vim='mvim -v'
+alias vim='TMPDIR="" mvim -v'
 
 alias r='rails'
 alias z='zeus'
