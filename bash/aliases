@@ -21,9 +21,9 @@ alias bo='bundle open'
 # We want to clean all of our gems sometimes, but not every time.
 # This will clean gems 10% of the time.
 # Game theory.
-alias bi='bundle install && ( ( [ $RANDOM -gt 29490 ] && [ `rvm-prompt g` ] && bundle clean --force ); true )'
+alias bi='bundle install --standalone --binstubs bundle/bin && ( ( [ $RANDOM -gt 29490 ] && [ `rvm-prompt g` ] && bundle clean --force ); true )'
 alias c='cap'
-alias gs='guard start'
+alias gs='guard --no-bundler-warning'
 alias f='git flow feature'
 alias release='git flow release'
 alias rk='rake'

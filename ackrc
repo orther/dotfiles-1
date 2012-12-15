@@ -13,6 +13,7 @@
 --noimage
 --novideo
 --nodocs
+--ignore-dir=bundle
 --ignore-dir=tmp
 --ignore-dir=solr/data
 --ignore-dir=.sass-cache
