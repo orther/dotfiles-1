@@ -15,7 +15,7 @@ alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias vim='mvim -v'
 
 alias r='rails'
-alias z='zeus'
+alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
 alias b='bundle exec'
 alias bo='bundle open'
 # We want to clean all of our gems sometimes, but not every time.
@@ -26,8 +26,8 @@ alias c='cap'
 alias gs='guard --no-bundler-warning'
 alias f='git flow feature'
 alias release='git flow release'
-alias rk='rake'
-alias mig='rake db:migrate db:test:prepare'
+alias rk='z rake'
+alias mig='z rake db:migrate db:test:prepare'
 
 alias g=hub
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
