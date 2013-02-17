@@ -71,7 +71,7 @@
 [rerere]
   enabled = true
 [push]
-  default = tracking
+	default = tracking
 [core]
 	excludesfile = /Users/aaronjensen/.gitignore_global
 	autocrlf = input
