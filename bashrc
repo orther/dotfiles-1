@@ -57,9 +57,11 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_FREE_MIN=$RUBY_HEAP_FREE_MIN
 
-# Enter bracketed paste mode, see .inputrc for how to ignore it in bash
-[ -n "$ITERM_PROFILE" ] && printf "\e[?2004h"
+# This enables notification when a pane gains or loses focus. In order for this to work
+# you have to have a custom build of tmux: https://github.com/akracun/tmux
+[ -n "$TMUX" ] && tmux set-option -g focus-filter on > /dev/null 2>&1 && export TMUX_CAN_FOCUS=1
 
+[[ -s "$HOME/.bash_private" ]] && source "$HOME/.bash_private"
 [[ -s "$HOME/nvm/nvm.sh" ]] && source "$HOME/nvm/nvm.sh"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion

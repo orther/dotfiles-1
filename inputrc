@@ -8,9 +8,6 @@
 "\e[5D": backward-word
 "\e\e[C": forward-word
 "\e\e[D": backward-word
-# ignore sequences for bracketed paste mode. This is used in vim.
-"\e[200~": ''
-"\e[201~": ''
 
 set completion-ignore-case On
 set bell-style off
