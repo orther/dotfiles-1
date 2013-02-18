@@ -15,4 +15,4 @@ things.
 1. I use a fork of tmux until the focus filter feature is in tmux proper. This
    lets me use FocusGained/FocusLost in vim which I primarily use to make 
    `cmd+v` work like it should in terminal vim. You can find the fork in my
-   [taps](aaronjensen/homebrew-taps).
+   [taps](https://github.com/aaronjensen/homebrew-tap).
