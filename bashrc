@@ -58,7 +58,7 @@ export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_FREE_MIN=$RUBY_HEAP_FREE_MIN
 
 # Free up ^S for i-search
-stty stop ^J
+stty stop undef
 
 # This enables notification when a pane gains or loses focus. In order for this to work
 # you have to have a custom build of tmux: https://github.com/akracun/tmux
