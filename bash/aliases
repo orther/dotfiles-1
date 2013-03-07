@@ -16,7 +16,7 @@ alias vim='mvim -v'
 
 alias r='rails'
 alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
-alias zs='(bundle check > /dev/null || bi) && zeus start'
+alias zs='(bundle check > /dev/null || bi) && rm .zeus.sock; reset; zeus start'
 alias b='bundle exec'
 alias bo='bundle open'
 # We want to clean all of our gems sometimes, but not every time.
