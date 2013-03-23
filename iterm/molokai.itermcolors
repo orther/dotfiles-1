@@ -131,11 +131,11 @@
 	<key>Ansi 8 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.40361637443438914</real>
 		<key>Green Component</key>
-		<real>0.0</real>
+		<real>0.40361637443438914</real>
 		<key>Red Component</key>
-		<real>0.0</real>
+		<real>0.40361637443438914</real>
 	</dict>
 	<key>Ansi 9 Color</key>
 	<dict>
