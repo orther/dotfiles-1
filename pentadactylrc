@@ -23,7 +23,9 @@ set passkeys+=mail.google.com:anHjkXKJn/xsADrReEfF<Tab><CR>}{u-+=<Escape>N,gi,gs
 set passkeys+=google.com/calendar:kpjnrtdwmxace<Delete>z/+qs,?
 set passkeys+=pivotaltracker.com:/aBGCDHIWL,?
 set passkeys+=google.com/reader:jk<Space>npNPXOslteSDvo<CR>cCmATrfu/a=-,<Shift><Space>,gh,ga,gs,gS,gu,gt,gT,gd,gf,gF,gc,ge,gp,?
-set passkeys+=github.com:jkts?<CR>
+
+map ,f <C-v>t
+set passkeys+=github.com:jks?<CR>
 
 " Make search work on github
 set strictfocus=github.com:laissez-faire,'chrome:*':laissez-faire,*:moderate
