@@ -24,3 +24,4 @@ bundler_stubs
 .noexec.yaml
 bundle/
 .agignore
+slurper_config.yml
