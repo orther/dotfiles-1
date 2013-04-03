@@ -5,6 +5,7 @@ group user
 colorscheme molokai
 "set hintkeys=asdfgjklhiterno
 hi Hint font-weight: bold !important; margin: -.2ex; line-height: 15px !important; padding: 1px; outline: 0 solid rgba(0, 0, 0, .5); background:  rgba(233, 0, 78, .95); color: white; text-transform: uppercase;
+hi -append Hint[active] color:black !important;
 
 hi FontFixed -a font: 15px "Inconsolata-g", monospace !important
 hi -append -link FontFixed Hint
