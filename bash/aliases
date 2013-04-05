@@ -16,6 +16,7 @@ alias vim='mvim -v'
 
 alias r='rails'
 alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
+alias zb='`[ -e .zeus.sock ] && echo zeus || echo bundle exec`'
 alias zs='(bundle check > /dev/null || bi); zk; rm .zeus.sock; reset; zeus start'
 alias zk='ps aux | grep zeus | grep -v grep | awk '"'"'{print $2}'"'"' | xargs kill -9'
 alias b='bundle exec'
@@ -28,8 +29,8 @@ alias c='cap'
 alias gs='guard --no-bundler-warning'
 alias f='git flow feature'
 alias release='git flow release'
-alias rk='z rake'
-alias mig='z rake db:migrate db:test:prepare'
+alias rk='zb rake'
+alias mig='rk db:migrate db:test:prepare'
 
 alias g=hub
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
