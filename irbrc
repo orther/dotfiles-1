@@ -1,7 +1,7 @@
 # ruby 1.8.7 compatible
 require 'rubygems'
 
-if defined?(::Bundler) or true
+if defined?(::Bundler)
   global_gemset = ENV['GEM_PATH'].split(':').grep(/ruby.*@global/).first
   global_gemset ||= ENV['_ORIGINAL_GEM_PATH'].split(':').grep(/ruby.*@global/).first
   if global_gemset
