@@ -1,12 +1,12 @@
 [user]
-	name = Aaron Jensen
+  name = Aaron Jensen
   email = aaronjensen@gmail.com
 [color]
   diff = auto
   status = auto
   branch = auto
   interactive = auto
-	ui = always
+  ui = always
 [alias]
   st = status -sb
   ci = commit
@@ -44,7 +44,7 @@
   ds = diff --stat=160,120
   dh = diff HEAD^
   ru = remote update --prune
-	prd = pull-request -b develop
+  prd = pull-request -b develop
   rho = !git stash -u 2>&1 > /dev/null && git reset --hard origin/`bash -c current_branch`
   mtv = mergetool --tool=mvim3
 
@@ -53,11 +53,11 @@
 [merge]
   summary = false
   tool = p4merge
-	conflictstyle = diff3
+  conflictstyle = diff3
 [mergetool]
   keepBackup = false
   keepTemporaries = false
-	prompt = false
+  prompt = false
 [mergetool "mvim3"]
   keepBackup = false
   keepTemporaries = false
@@ -72,18 +72,18 @@
 [rerere]
   enabled = true
 [push]
-	default = tracking
+  default = tracking
 [core]
-	excludesfile = /Users/aaronjensen/.gitignore_global
-	autocrlf = input
+  excludesfile = /Users/aaronjensen/.gitignore_global
+  autocrlf = input
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
 [browser "ff"]
   cmd = open -a Firefox.app
 [web]
