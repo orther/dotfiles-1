@@ -2,6 +2,7 @@
 
 alias ls='ls -G'
 alias ll='ls -Al'
+alias l='ls -lrthG'
 alias mkdir='mkdir -p'
 alias which='type -a'
 alias ..='cd ..'
@@ -31,8 +32,19 @@ alias f='git flow feature'
 alias release='git flow release'
 alias rk='zb rake'
 alias mig='rk db:migrate db:test:prepare'
+alias mqi='script/mergeq integration'
+alias mqd='script/mergeq develop'
+alias mqc='script/mergeq --continue'
+alias ss='spring stop'
+alias frequency='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}'"'"' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10'
 
-alias g=hub
+function g {
+  if [[ $# > 0 ]]; then
+    hub $@
+  else
+    git status
+  fi
+}
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
 
 alias gup='git smart-pull'
