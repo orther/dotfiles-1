@@ -37,6 +37,7 @@ alias mqd='script/mergeq develop'
 alias mqc='script/mergeq --continue'
 alias ss='spring stop'
 alias frequency='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}'"'"' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10'
+alias bm='[[ :$PATH: != *:"$PWD/bin":* ]] && export PATH=$PWD/bin:$PATH'
 
 function g {
   if [[ $# > 0 ]]; then
