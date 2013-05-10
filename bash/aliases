@@ -61,6 +61,10 @@ function current_branch {
   echo ${branch_name##refs/heads/}
 }
 
+function current_tracking_branch {
+  git branch -vv 2>/dev/null | grep -e "^\*" | grep -oe "\[[^]:]*" | sed -n 's/\[//p'
+}
+
 # Pause guard while checking out. Add below alias to .gitconfig:
 # co = "!bash -c 'pause_guard' ; git checkout $* ; bash -c 'unpause_guard'"
 
