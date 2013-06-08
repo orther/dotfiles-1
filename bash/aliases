@@ -15,7 +15,7 @@ alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 
 alias vim='mvim -v'
 
-alias r='rails'
+alias r='`[ -e bin/r ] && echo bin/r || echo rails`'
 alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
 alias zb='`[ -e .zeus.sock ] && echo zeus || echo bundle exec`'
 alias zs='(bundle check > /dev/null || bi); zk; rm .zeus.sock; reset; zeus start'
@@ -30,7 +30,6 @@ alias c='cap'
 alias gs='guard --no-bundler-warning'
 alias f='git flow feature'
 alias release='git flow release'
-alias rk='zb rake'
 alias mig='rk db:migrate db:test:prepare'
 alias mqi='script/mergeq integration'
 alias mqd='script/mergeq develop'
@@ -39,6 +38,14 @@ alias ss='spring stop'
 alias frequency='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}'"'"' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10'
 alias bm='[[ :$PATH: != *:"$PWD/bin":* ]] && export PATH=$PWD/bin:$PATH'
 alias gg='git l $(current_tracking_branch)^...'
+
+function rk {
+  if [ -e bin/rake ]; then
+    bin/rake "$@"
+  else
+    zb rake "$@"
+  fi
+}
 
 function g {
   if [[ $# > 0 ]]; then
