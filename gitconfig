@@ -8,7 +8,7 @@
   interactive = auto
   ui = always
 [alias]
-  st = status -sb
+  st = "!echo use g"
   ci = commit
   ciz = commit --no-edit
   cim = commit -m
