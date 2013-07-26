@@ -37,6 +37,18 @@ mkdir -p "$TARGET"
 
 for P in extra/KeyRemap4MacBook/*.xml
 do
-  if [ "$TARGET/$P" ]; then continue; fi
-  ln -v -s "$F/$P" "$TARGET/$(basename $P)"
+  T=$(basename $P)
+  if [ -h "$TARGET/$T" ]; then continue; fi
+
+  if [ -e "$TARGET/$T" ]; then
+    if [ -e "$TARGET/__$T" ]; then
+      echo "want to override $TARGET/$T but backup exists"
+      continue;
+    fi
+
+    echo -n "Backup "
+    mv -v "$TARGET/$T" "$TARGET/__$T"
+  fi
+
+  ln -v -s "$F/$P" "$TARGET/$T"
 done
