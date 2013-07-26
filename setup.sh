@@ -7,6 +7,7 @@ for P in *
 do
   # skip setup
   if [ "$P" = "setup.sh" ]; then continue; fi
+  if [ "$P" = "extra" ]; then continue; fi
 
   # ensure permissions
   chmod -R o-rwx,g-rwx $P
@@ -28,4 +29,14 @@ do
   # create link
   echo -n "Link "
   ln -v -s "$F/$P" "$HOME/.$P"
+done
+
+# KeyRemap4Macbook
+TARGET="$HOME/Library/Application Support/KeyRemap4MacBook"
+mkdir -p "$TARGET"
+
+for P in extra/KeyRemap4MacBook/*.xml
+do
+  if [ "$TARGET/$P" ]; then continue; fi
+  ln -v -s "$F/$P" "$TARGET/$(basename $P)"
 done
