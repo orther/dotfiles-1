@@ -11,7 +11,7 @@ export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
 export RSPEC_FORMAT=Fuubar
 export PARALLEL_TEST_PROCESSORS=2
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:~/.bin:$PATH:$HOME/.rvm/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/.bin:$PATH:$HOME/.rvm/bin
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
