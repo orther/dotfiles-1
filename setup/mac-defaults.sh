@@ -29,4 +29,5 @@ defaults write com.apple.dock showhidden -bool true
 defaults write -g ApplePressAndHoldEnabled -bool false
 # Enable AirDrop on Ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-
+# Disable the Dock
+defaults write com.apple.dock autohide-delay -float 9999999
