@@ -29,5 +29,11 @@ defaults write com.apple.dock showhidden -bool true
 defaults write -g ApplePressAndHoldEnabled -bool false
 # Enable AirDrop on Ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+
 # Disable the Dock
 defaults write com.apple.dock autohide-delay -float 9999999
+
+# Experimental iterm2 optimizations, hopefully won't be needed once
+# the new version is released. See:
+# https://code.google.com/p/iterm2/issues/detail?id=2553#c14
+defaults write com.googlecode.iterm2 ExperimentalOptimizationsEnabled -bool true
