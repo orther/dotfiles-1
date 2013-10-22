@@ -1,5 +1,15 @@
 <?xml version="1.0"?>
 <root>
+  <appdef>
+    <appname>FLOWDOCK</appname>
+    <equal>com.flowdock.desktop.Flowdock</equal>
+  </appdef>
+  <item>
+    <name>Flowdock</name>
+    <only>FLOWDOCK</only>
+    <identifier>private.flowdock</identifier>
+    <autogen>__KeyToKey__ KeyCode::W, VK_COMMAND, KeyCode::ESCAPE, KeyCode::W</autogen>
+  </item>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
     <url>file:///Applications/iTerm.app</url>
