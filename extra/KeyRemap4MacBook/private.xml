@@ -53,6 +53,7 @@
       <identifier vk_config="true">notsave.quick_app_switch</identifier>
       <autogen>__ShowStatusMessage__ Quick App Switch</autogen>
 
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::SEMICOLON, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::C, KeyCode::VK_OPEN_URL_APP_GoogleChrome, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_OPEN_URL_APP_FirefoxAurora, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_OPEN_URL_APP_iTerm, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
