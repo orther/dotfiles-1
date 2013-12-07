@@ -1,1 +1,3 @@
-exclude: [zeus]
+exclude:
+  - zeus
+  - spring
