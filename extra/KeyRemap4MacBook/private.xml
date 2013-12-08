@@ -23,6 +23,10 @@
     <url>file:///Applications/Firefox.app</url>
   </vkopenurldef>
   <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Gmail</name>
+    <url>file:///Applications/Gmail.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_GoogleChrome</name>
     <url>file:///Applications/Google%20Chrome.app</url>
   </vkopenurldef>
@@ -49,6 +53,7 @@
       <name>Switches apps after pressing ;</name>
       <appendix>;c - Google Chrome</appendix>
       <appendix>;f - Firefox</appendix>
+      <appendix>;g - Gmail</appendix>
       <appendix>;i - iTerm</appendix>
       <appendix>;k - Skype</appendix>
       <appendix>;l - Flowdock</appendix>
@@ -59,6 +64,7 @@
 
       <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::SEMICOLON, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::C, KeyCode::VK_OPEN_URL_APP_GoogleChrome, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::VK_OPEN_URL_APP_Gmail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_OPEN_URL_APP_Firefox, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_OPEN_URL_APP_iTerm, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_OPEN_URL_APP_Skype, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
