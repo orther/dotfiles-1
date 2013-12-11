@@ -42,10 +42,6 @@
     <name>KeyCode::VK_OPEN_URL_APP_Flowdock</name>
     <url>file:///Applications/Flowdock.app</url>
   </vkopenurldef>
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_Sqwiggle</name>
-    <url>file:///Applications/Sqwiggle.app</url>
-  </vkopenurldef>
 
   <item>
     <name>Quick App Switching</name>
@@ -57,7 +53,6 @@
       <appendix>;i - iTerm</appendix>
       <appendix>;k - Skype</appendix>
       <appendix>;l - Flowdock</appendix>
-      <appendix>;q - Sqwiggle</appendix>
       <appendix>;s - Work Mail</appendix>
       <identifier vk_config="true">notsave.quick_app_switch</identifier>
       <autogen>__ShowStatusMessage__ Quick App Switch</autogen>
@@ -69,7 +64,6 @@
       <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_OPEN_URL_APP_iTerm, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_OPEN_URL_APP_Skype, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_OPEN_URL_APP_Flowdock, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
-      <autogen>__KeyToKey__ KeyCode::Q, KeyCode::VK_OPEN_URL_APP_Sqwiggle, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_OPEN_URL_APP_WorkMail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
 
       <include path="passthru.xml">
