@@ -1,3 +1,2 @@
 shopt -s expand_aliases
-shopt -s globstar
 source ~/.bash/aliases
