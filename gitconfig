@@ -90,3 +90,7 @@
   cmd = open -a Firefox.app
 [web]
   browser = ff
+[pull]
+	rebase = preserve
+[branch]
+	autosetuprebase = always
