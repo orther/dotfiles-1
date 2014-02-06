@@ -1102,12 +1102,23 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2049 88 445 270 0 0 2560 1578 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>210 142 924 485 0 0 2560 1578 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2560 1600 0 0 2560 1578 </string>
+	<string>0 4 1493 1574 0 0 2560 1578 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1585 744 650 506 0 0 2560 1578 </string>
 	<key>NeverWarnAboutShortLivedSessions_5C0A1190-B94E-4CA0-8F03-D49CB94DE319</key>
@@ -1844,7 +1855,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>5AB76523-2CDF-49FE-8C18-459ECC7FDD48</string>
+			<string>DD8F71F1-5A4B-46E7-ABDA-A43A2437A8E4</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -2278,7 +2289,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>fd20:ee27:f0f0:43c6:8818:9a2d:c14:f7f3</string>
+			<string>fd20:ee27:f0f0:43c6:a890:3073:b6a0:ee22</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -2286,7 +2297,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh fd20:ee27:f0f0:43c6:8818:9a2d:c14:f7f3</string>
+			<string>ssh fd20:ee27:f0f0:43c6:a890:3073:b6a0:ee22</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2333,7 +2344,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>A66B4B3C-EA5A-4A2D-85F1-603F2A1EBF3B</string>
+			<string>583661DE-69AE-433D-9686-B32687F5E83C</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -2654,7 +2665,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-01-14T16:33:43Z</date>
+	<date>2014-02-06T01:27:14Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
