@@ -3,8 +3,8 @@
 #set -o vi
 
 export BASH_ENV='~/.bash/env'
-export EDITOR='mvim -v'
-export VISUAL='mvim -v'
+export EDITOR='vim'
+export VISUAL='vim'
 export TM_GIT=/usr/local/bin/git
 
 export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
