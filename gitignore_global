@@ -26,3 +26,5 @@ bundle/
 .agignore
 slurper_config.yml
 .ruby-gemset
+.idea
+tags
