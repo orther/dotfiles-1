@@ -10,8 +10,8 @@ if defined?(::Bundler)
   end
 end
 
-require 'pry-debugger'
-require 'pry-coolline'
+require 'pry-byebug'
+# require 'pry-coolline'
 require 'pry-stack_explorer'
 
 Pry.config.prompt = [ proc { ">> " }, proc { ">? " } ]
