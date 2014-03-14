@@ -31,3 +31,4 @@ slurper_config.yml
 .ruby-gemset
 .idea
 tags
+*.pyc
