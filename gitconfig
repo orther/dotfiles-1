@@ -88,8 +88,6 @@
   trustExitCode = true
 [browser "ff"]
   cmd = open -a Firefox.app
-[web]
-  browser = ff
 [pull]
 	rebase = preserve
 [branch]
