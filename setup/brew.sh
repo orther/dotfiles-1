@@ -2,4 +2,37 @@
 brew tap homebrew/dupes
 brew tap aaronjensen/tap
 
-brew install git qt ack git-flow macvim readline graphviz memcached reattach-to-user-namespace autoconf hub mongodb ssh-copy-id autojump imagemagick mysql the_silver_searcher automake tig bash-completion jpeg pcre wemux ctags libevent phantomjs wget libtiff zsh postgresql tmux
+brew install \
+ack \
+autoconf \
+autojump \
+automake \
+bash-completion \
+ctags \
+direnv \
+gist \
+git \
+git-flow \
+graphviz \
+hub \
+imagemagick \
+jpeg \
+libevent \
+libtiff \
+macvim \
+memcached \
+mongodb \
+mysql \
+pcre \
+phantomjs \
+postgresql \
+qt \
+readline \
+reattach-to-user-namespace \
+ssh-copy-id \
+the_silver_searcher \
+tig \
+tmux
+wemux \
+wget \
+zsh

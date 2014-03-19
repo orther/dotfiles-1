@@ -69,3 +69,4 @@ stty stop undef
 [[ -s /Users/aaronjensen/.nvm/nvm.sh ]] && . /Users/aaronjensen/.nvm/nvm.sh # This loads NVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+eval "$(direnv hook bash)"

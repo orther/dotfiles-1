@@ -32,3 +32,4 @@ slurper_config.yml
 .idea
 tags
 *.pyc
+.envrc
