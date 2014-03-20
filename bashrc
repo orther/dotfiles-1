@@ -7,6 +7,7 @@ export EDITOR='mvim -v'
 export VISUAL='mvim -v'
 export TM_GIT=/usr/local/bin/git
 
+export NOEXEC_EXCLUDE="zeus spring"
 export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
 export RSPEC_FORMAT=Fuubar
 export PARALLEL_TEST_PROCESSORS=2
