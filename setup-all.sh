@@ -24,6 +24,13 @@ command -v rvm > /dev/null || \curl -sSL https://get.rvm.io | bash
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
+# Start postgresql at boot
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+# Install pow
+curl get.pow.cx | sh
+
 # Setup bash 4
 if [[ ! $BASH_VERSION == 4* ]]; then
   echo Need Sudo to install bash 4
