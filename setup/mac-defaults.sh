@@ -38,6 +38,8 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Enable AirDrop on Ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
+# KeyRemap4MacBook
+defaults import org.pqrs.KeyRemap4MacBook ./setup/keyremap4macbook.plist
 
 # Experimental iterm2 optimizations, hopefully won't be needed once
 # the new version is released. See:

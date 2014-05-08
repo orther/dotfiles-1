@@ -8,6 +8,7 @@ ack \
 autoconf \
 autojump \
 automake \
+bash \
 bash-completion \
 boot2docker \
 brew-cask \
