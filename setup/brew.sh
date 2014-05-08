@@ -41,6 +41,7 @@ wemux \
 wget \
 zsh
 
+export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 brew cask install alfred
 brew cask install android-file-transfer
 brew cask install caffeine
@@ -49,6 +50,7 @@ brew cask install copy
 # brew cask install divvy
 brew cask install dropbox
 brew cask install firefox
+brew cask install flowdock
 brew cask install flux
 brew cask install gitx-rowanj
 brew cask install google-chrome
@@ -56,9 +58,12 @@ brew cask install google-drive
 brew cask install harvest
 brew cask install iterm2
 brew cask install keyremap4macbook
+brew cask install lastpass-universal
 brew cask install nvalt
 brew cask install p4merge
 brew cask install screenhero
 brew cask install silverlight
 brew cask install skype
 brew cask install vlc
+
+brew cask alfred link

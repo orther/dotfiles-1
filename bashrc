@@ -28,6 +28,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export HOMEBREW_TEMP=/var/tmp
+export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 export BUNDLER_EDITOR='/usr/local/bin/mvim -v'
 
 # git prompt goodnes
