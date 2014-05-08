@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 brew tap homebrew/dupes
-brew tap aaronjensen/tap
 brew tap caskroom/cask
 
 brew install \
