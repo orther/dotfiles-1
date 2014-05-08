@@ -62,6 +62,9 @@ export RUBY_GC_HEAP_FREE_SLOTS=$RUBY_FREE_MIN
 export RUBY_GC_HEAP_INIT_SLOTS=$RUBY_HEAP_MIN_SLOTS
 export TCH_BUNDLE_INSTALL=bundle
 
+# Docker
+export DOCKER_HOST=tcp://localhost:4243
+
 # Free up ^S for i-search
 stty stop undef
 
