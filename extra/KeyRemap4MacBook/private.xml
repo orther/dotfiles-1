@@ -12,7 +12,7 @@
   </item>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
-    <url>file:///Applications/iTerm.app</url>
+    <url>file:///Users/aaronjensen/Applications/iTerm.app</url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_FirefoxAurora</name>
@@ -20,7 +20,7 @@
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Firefox</name>
-    <url>file:///Applications/Firefox.app</url>
+    <url>file:///Users/aaronjensen/Applications/Firefox.app</url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Gmail</name>
@@ -36,7 +36,7 @@
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Skype</name>
-    <url>file:///Applications/Skype.app</url>
+    <url>file:///Users/aaronjensen/Applications/Skype.app</url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Flowdock</name>
