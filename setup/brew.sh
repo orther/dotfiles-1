@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 brew tap homebrew/dupes
 brew tap caskroom/cask
+brew update
 
 brew install \
 ack \
