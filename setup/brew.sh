@@ -38,6 +38,7 @@ ssh-copy-id \
 the_silver_searcher \
 tig \
 tmux \
+urlview \
 wemux \
 wget \
 zsh
