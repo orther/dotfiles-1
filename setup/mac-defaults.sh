@@ -32,6 +32,9 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 killall Dock
 
+# Disable "Displays have separate Spaces"
+defaults write com.apple.dock spans-displays -bool true
+
 # Disable press and hold keyboard shortcuts
 defaults write -g ApplePressAndHoldEnabled -bool false
 
