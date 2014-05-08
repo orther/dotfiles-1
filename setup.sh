@@ -7,6 +7,8 @@ for P in *
 do
   # skip setup
   if [ "$P" = "setup.sh" ]; then continue; fi
+  if [ "$P" = "setup-all.sh" ]; then continue; fi
+  if [ "$P" = "setup" ]; then continue; fi
   if [ "$P" = "extra" ]; then continue; fi
 
   # ensure permissions

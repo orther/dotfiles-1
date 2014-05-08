@@ -36,7 +36,7 @@ reattach-to-user-namespace \
 ssh-copy-id \
 the_silver_searcher \
 tig \
-tmux
+tmux \
 wemux \
 wget \
 zsh

@@ -21,19 +21,26 @@ defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 chflags nohidden ~/Library
+
+# Disable and hide the Dock
 defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock expose-animation-duration -float 0.1
-defaults write com.apple.Dock autohide-delay -float 0
+defaults write com.apple.Dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 9999999
 defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock showhidden -bool true
+defaults write com.apple.dock dashboard-in-overlay -bool true
+killall Dock
+
+# Disable press and hold keyboard shortcuts
 defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Enable AirDrop on Ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
-# Disable the Dock
-defaults write com.apple.dock autohide-delay -float 9999999
 
 # Experimental iterm2 optimizations, hopefully won't be needed once
 # the new version is released. See:
 # https://code.google.com/p/iterm2/issues/detail?id=2553#c14
 # defaults write com.googlecode.iterm2 ExperimentalOptimizationsEnabled -bool true
+echo Defaults written, you may need to reboot or at least relog.
