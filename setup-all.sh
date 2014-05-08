@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+cd "$(dirname "$0")"
+
 ./setup.sh
 
 # Install my vim files
@@ -27,3 +30,8 @@ if [[ ! $BASH_VERSION == 4* ]]; then
   sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
   chsh -s /usr/local/bin/bash
 fi
+
+# Compile quick switching applescripts
+osacompile -o bin/chrome.app bin/chrome.scpt
+osacompile -o bin/gmail-personal.app bin/gmail-personal.scpt
+osacompile -o bin/gmail-substantial.app bin/gmail-substantial.scpt
