@@ -33,11 +33,11 @@ do
   ln -v -s "$F/$P" "$HOME/.$P"
 done
 
-# KeyRemap4Macbook
-TARGET="$HOME/Library/Application Support/KeyRemap4MacBook"
+# Karabiner
+TARGET="$HOME/Library/Application Support/Karabiner"
 mkdir -p "$TARGET"
 
-for P in extra/KeyRemap4MacBook/*.xml
+for P in extra/Karabiner/*.xml
 do
   T=$(basename $P)
   if [ -h "$TARGET/$T" ]; then continue; fi

@@ -1,2 +1,2 @@
 # KeyRemap4MacBook
-defaults import org.pqrs.KeyRemap4MacBook ./setup/keyremap4macbook.plist
+defaults import org.pqrs.Karabiner ./setup/karabiner.plist

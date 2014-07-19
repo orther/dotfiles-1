@@ -59,7 +59,7 @@ brew cask install google-chrome
 brew cask install google-drive
 brew cask install harvest
 brew cask install iterm2
-brew cask install keyremap4macbook
+brew cask install karabiner
 brew cask install lastpass-universal
 brew cask install nvalt
 brew cask install p4merge

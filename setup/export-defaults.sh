@@ -1,1 +1,1 @@
-defaults export org.pqrs.KeyRemap4Macbook setup/keyremap4macbook.plist
+defaults export org.pqrs.Karabiner setup/karabiner.plist
