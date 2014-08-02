@@ -1,0 +1,33 @@
+#!/bin/bash
+# Shows the commits that are unique to your branch compared to master. Useful
+# for finding commits made before a merge that is now cluttering your log with
+# another branch's history.
+
+merge_base="$1"
+
+function find_master_for_merge_base {
+  git show-ref --verify --quiet refs/remotes/origin/master
+  if [ $? -eq 0 ]; then
+    echo 'origin/master'
+    exit 0
+  fi
+
+  git show-ref --verify --quiet refs/heads/master
+  if [ $? -eq 0 ]; then
+    echo 'master'
+    exit 0
+  fi
+
+  echo ''
+  exit 1
+}
+
+if [ -z "$merge_base" ]; then
+  merge_base=$(find_master_for_merge_base)
+  if [ -z "$merge_base" ]; then
+    echo 'Master branch not found. Please specify which commit to use as the base.'
+    exit 1
+  fi
+fi
+
+git log --oneline --no-merges --first-parent ${merge_base}..
