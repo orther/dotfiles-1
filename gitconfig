@@ -67,10 +67,12 @@
 [mergetool "mvim3"]
   keepBackup = false
   keepTemporaries = false
-  cmd=/usr/local/bin/mvim -v -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+  cmd = /usr/local/bin/mvim -v -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [mergetool "p4merge"]
+  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
   keepTemporaries = false
   keepBackup = false
+  trustExitCode = false
 [diff]
   tool = vimdiff
 [difftool]
