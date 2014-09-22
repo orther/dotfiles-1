@@ -11,6 +11,10 @@
     <autogen>__KeyToKey__ KeyCode::W, VK_COMMAND, KeyCode::ESCAPE, KeyCode::W</autogen>
   </item>
   <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_nvALT</name>
+    <url>file:///Applications/nvALT.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_iTerm</name>
     <url>file:///Applications/iTerm.app</url>
   </vkopenurldef>
@@ -58,6 +62,7 @@
       <appendix>;k - Skype</appendix>
       <appendix>;l - Flowdock</appendix>
       <appendix>;m - Messages</appendix>
+      <appendix>;n - nvALT</appendix>
       <appendix>;s - Work Mail</appendix>
       <identifier vk_config="true">notsave.quick_app_switch</identifier>
       <autogen>__ShowStatusMessage__ Quick App Switch</autogen>
@@ -71,6 +76,7 @@
       <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_OPEN_URL_APP_Flowdock, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::M, KeyCode::VK_OPEN_URL_APP_Messages, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_OPEN_URL_APP_WorkMail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::VK_OPEN_URL_APP_nvALT, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
 
       <include path="passthru.xml">
         <replacementdef>
