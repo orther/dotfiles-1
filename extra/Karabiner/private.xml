@@ -28,15 +28,21 @@
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Gmail</name>
-    <url>file:///Users/aaronjensen/.bin/gmail-personal.app</url>
+    <url type="shell">
+      <![CDATA[ osascript $HOME/.bin/gmail-personal.scpt ]]>
+    </url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_GoogleChrome</name>
-    <url>file:///Users/aaronjensen/.bin/chrome.app</url>
+    <url type="shell">
+      <![CDATA[ osascript $HOME/.bin/chrome.scpt ]]>
+    </url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_WorkMail</name>
-    <url>file:///Users/aaronjensen/.bin/gmail-substantial.app</url>
+    <url type="shell">
+      <![CDATA[ osascript $HOME/.bin/gmail-substantial.scpt ]]>
+    </url>
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Skype</name>
