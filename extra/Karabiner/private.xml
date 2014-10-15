@@ -56,6 +56,10 @@
     <name>KeyCode::VK_OPEN_URL_APP_Messages</name>
     <url>file:///Applications/Messages.app</url>
   </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Mailbox</name>
+    <url>file:///Applications/Mailbox%20(Beta).app</url>
+  </vkopenurldef>
 
   <item>
     <name>Quick App Switching</name>
@@ -70,6 +74,7 @@
       <appendix>;m - Messages</appendix>
       <appendix>;n - nvALT</appendix>
       <appendix>;s - Work Mail</appendix>
+      <appendix>;x - Mailbox</appendix>
       <identifier vk_config="true">notsave.quick_app_switch</identifier>
       <autogen>__ShowStatusMessage__ Quick App Switch</autogen>
 
@@ -83,6 +88,7 @@
       <autogen>__KeyToKey__ KeyCode::M, KeyCode::VK_OPEN_URL_APP_Messages, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_OPEN_URL_APP_WorkMail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::N, KeyCode::VK_OPEN_URL_APP_nvALT, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, KeyCode::VK_OPEN_URL_APP_Mailbox, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
 
       <include path="passthru.xml">
         <replacementdef>
