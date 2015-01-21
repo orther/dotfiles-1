@@ -69,6 +69,7 @@ export DOCKER_HOST=tcp://localhost:4243
 # Free up ^S for i-search
 stty stop undef
 
+\which boot2docker >/dev/null && $(boot2docker shellinit 2>/dev/null)
 [[ -s "$HOME/.bash_private" ]] && source "$HOME/.bash_private"
 [[ -s "$HOME/nvm/nvm.sh" ]] && source "$HOME/nvm/nvm.sh"
 [[ -s /Users/aaronjensen/.nvm/nvm.sh ]] && . /Users/aaronjensen/.nvm/nvm.sh # This loads NVM
