@@ -34,10 +34,14 @@
   </vkopenurldef>
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_GoogleChrome</name>
-    <url type="shell">
-      <![CDATA[ osascript $HOME/.bin/chrome.scpt ]]>
-    </url>
+    <url>file:///Applications/Google%20Chrome.app</url>
   </vkopenurldef>
+  <!-- <vkopenurldef> -->
+  <!--   <name>KeyCode::VK_OPEN_URL_APP_GoogleChrome</name> -->
+  <!--   <url type="shell"> -->
+  <!--     <![CDATA[ osascript $HOME/.bin/chrome.scpt ]]> -->
+  <!--   </url> -->
+  <!-- </vkopenurldef> -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_WorkMail</name>
     <url type="shell">
@@ -80,13 +84,15 @@
 
       <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::SEMICOLON, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::C, KeyCode::VK_OPEN_URL_APP_GoogleChrome, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
-      <autogen>__KeyToKey__ KeyCode::G, KeyCode::VK_OPEN_URL_APP_Gmail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
+      <!-- <autogen>__KeyToKey__ KeyCode::G, KeyCode::VK_OPEN_URL_APP_Gmail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen> -->
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::VK_OPEN_URL_APP_GoogleChrome, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_OPEN_URL_APP_Firefox, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::I, KeyCode::VK_OPEN_URL_APP_iTerm, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::K, KeyCode::VK_OPEN_URL_APP_Skype, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::L, KeyCode::VK_OPEN_URL_APP_Flowdock, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::M, KeyCode::VK_OPEN_URL_APP_Messages, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
-      <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_OPEN_URL_APP_WorkMail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
+      <!-- <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_OPEN_URL_APP_WorkMail, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen> -->
+      <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_OPEN_URL_APP_GoogleChrome, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::N, KeyCode::VK_OPEN_URL_APP_nvALT, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
       <autogen>__KeyToKey__ KeyCode::X, KeyCode::VK_OPEN_URL_APP_Mailbox, KeyCode::VK_CONFIG_FORCE_OFF_notsave_quick_app_switch, Option::NOREPEAT</autogen>
 
