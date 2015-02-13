@@ -30,6 +30,6 @@ bundle/
 slurper_config.yml
 .ruby-gemset
 .idea
-tags
+/tags
 *.pyc
 .envrc
