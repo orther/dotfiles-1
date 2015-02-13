@@ -46,6 +46,7 @@
   dh = diff HEAD^
   ru = remote update --prune
   pr = pull-request
+  prd = pull-request -b develop
   rho = !git stash -u 2>&1 > /dev/null && git reset --hard HEAD@{u}
   mtv = mergetool --tool=mvim3
   ri = rebase -i
