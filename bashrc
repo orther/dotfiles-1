@@ -13,6 +13,7 @@ export RSPEC_FORMAT=Fuubar
 export PARALLEL_TEST_PROCESSORS=2
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/.bin:$PATH:$HOME/.rvm/bin
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
@@ -69,7 +70,7 @@ export DOCKER_HOST=tcp://localhost:4243
 # Free up ^S for i-search
 stty stop undef
 
-\which boot2docker >/dev/null && $(boot2docker shellinit 2>/dev/null)
+\which boot2docker > /dev/null && $(boot2docker shellinit 2>/dev/null)
 [[ -s "$HOME/.bash_private" ]] && source "$HOME/.bash_private"
 [[ -s "$HOME/nvm/nvm.sh" ]] && source "$HOME/nvm/nvm.sh"
 [[ -s /Users/aaronjensen/.nvm/nvm.sh ]] && . /Users/aaronjensen/.nvm/nvm.sh # This loads NVM
