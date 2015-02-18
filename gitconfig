@@ -97,3 +97,5 @@
 	rebase = preserve
 [branch]
 	autosetuprebase = always
+[credential]
+	helper = osxkeychain
