@@ -99,3 +99,5 @@
 	autosetuprebase = always
 [credential]
 	helper = osxkeychain
+[status]
+	showUntrackedFiles = all
