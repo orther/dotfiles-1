@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 brew tap homebrew/dupes
 brew tap caskroom/cask
+brew tap thoughtbot/formulae
 brew update
 
 brew install \
@@ -30,6 +31,7 @@ mongodb \
 mysql \
 pcre \
 phantomjs \
+pick \
 postgresql \
 qt \
 readline \
