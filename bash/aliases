@@ -16,8 +16,8 @@ alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias vim='mvim -v'
 
 alias r='`[ -e bin/r ] && echo bin/r || [ -e bin/rails ] && echo bin/rails || echo rails`'
-alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
-alias zb='`[ -e .zeus.sock ] && echo zeus || echo bundle exec`'
+alias z='`[ -e .zeus.sock ] && echo ze || echo SAD: Zeus is not running 1>&2`'
+alias zb='`[ -e .zeus.sock ] && echo ze || echo bundle exec`'
 alias zs='(bundle check > /dev/null || bi); zk; rm .zeus.sock; reset; zeus start'
 alias zk='ps aux | grep zeus | grep -v grep | awk '"'"'{print $2}'"'"' | xargs kill -9'
 alias b='bundle exec'
@@ -44,6 +44,16 @@ alias pbgist='gist -p -P | pbcopy'
 alias filecount='find . | cut -d/ -f2 | sort | uniq -c | sort -bn'
 
 alias gco='git checkout $(git branch -a | cut -c 3- | sed '"'"'s/^remotes\/[^/]*\///'"'"' | sort | uniq | grep -v HEAD | pick)'
+
+function zeus {
+  ARGS=$@
+  command zeus "$@"
+  ZE_EC=$?
+  stty sane
+  if [ $ZE_EC = 2 ]; then
+    ze "$ARGS"
+  fi
+}
 
 function rk {
   if [ -e bin/rake ]; then
