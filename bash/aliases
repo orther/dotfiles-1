@@ -41,6 +41,7 @@ alias frequency='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)prin
 alias bm='[[ :$PATH: != *:"$PWD/bin":* ]] && export PATH=$PWD/bin:$PATH'
 alias gg='git l $(current_tracking_branch)^...'
 alias pbgist='gist -p -P | pbcopy'
+alias filecount='find . | cut -d/ -f2 | sort | uniq -c | sort -bn'
 
 alias gco='git checkout $(git branch -a | cut -c 3- | sed '"'"'s/^remotes\/[^/]*\///'"'"' | sort | uniq | grep -v HEAD | pick)'
 
