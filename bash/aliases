@@ -51,7 +51,7 @@ function zeus {
   ZE_EC=$?
   stty sane
   if [ $ZE_EC = 2 ]; then
-    ze "$ARGS"
+    zeus "$ARGS"
   fi
 }
 
