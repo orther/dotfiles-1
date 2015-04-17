@@ -31,10 +31,3 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install pow
 curl get.pow.cx | sh
-
-# Setup bash 4
-if [[ ! $BASH_VERSION == 4* ]]; then
-  echo Need Sudo to install bash 4
-  sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
-  chsh -s /usr/local/bin/bash
-fi
