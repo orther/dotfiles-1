@@ -16,6 +16,7 @@ brew-cask \
 ctags \
 direnv \
 docker \
+fasd \
 gist \
 git \
 git-flow \
