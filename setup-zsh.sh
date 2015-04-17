@@ -14,6 +14,6 @@ git submodule init
 git submodule update
 
 echo Changing your shell to zsh...
-chsh -s /bin/zsh
+chsh -s /usr/local/bin/zsh
 
 echo Done! Logout and log back in for it to take full effect
