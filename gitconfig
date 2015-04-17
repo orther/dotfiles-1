@@ -12,7 +12,7 @@
   ci = commit
   ciz = commit --no-edit
   cim = commit -m
-  co = "!bash -c 'pause_guard' ; git checkout $* ; bash -c 'unpause_guard'"
+  co = checkout
   br = branch
   bra = branch -a
   cp = cherry-pick
