@@ -62,7 +62,7 @@ function rk {
   fi
 }
 
-unalias g
+unalias g 2>/dev/null
 function g {
   if [[ $# > 0 ]]; then
     hub "$@"

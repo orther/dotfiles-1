@@ -17,7 +17,7 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-completions src
 
   # theme
-  zgen oh-my-zsh themes/robbyrussell
+  zgen oh-my-zsh themes/re5et
 
   zgen save
 fi
@@ -27,7 +27,11 @@ ZSH_HIGHLIGHT_STYLES[path]='none'
 ZSH_HIGHLIGHT_STYLES[path_prefix]='none'
 ZSH_HIGHLIGHT_STYLES[path_approx]='fg=yellow'
 
+DISABLE_AUTO_TITLE="true"
+
 source "${HOME}/.shellrc"
 eval "$(direnv hook zsh)"
 
 fpath=("$HOME/.zsh" $fpath)
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
