@@ -8,6 +8,7 @@ do
   # skip setup
   if [[ "$P" == setup* ]]; then continue; fi
   if [ "$P" = "extra" ]; then continue; fi
+  if [ "$P" = "zgen" ]; then continue; fi
 
   # ensure permissions
   chmod -R o-rwx,g-rwx $P

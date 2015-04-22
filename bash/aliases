@@ -62,6 +62,7 @@ function rk {
   fi
 }
 
+unalias g
 function g {
   if [[ $# > 0 ]]; then
     hub "$@"
@@ -94,7 +95,6 @@ function current_tracking_branch {
 
   echo $branch_name
 }
-
 
 # Pause guard while checking out. Add below alias to .gitconfig:
 # co = "!bash -c 'pause_guard' ; git checkout $* ; bash -c 'unpause_guard'"
