@@ -17,7 +17,7 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-completions src
 
   # theme
-  zgen oh-my-zsh themes/re5et
+  zgen oh-my-zsh themes/kphoen
 
   zgen save
 fi
