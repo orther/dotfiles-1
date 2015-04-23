@@ -28,9 +28,10 @@ ZSH_HIGHLIGHT_STYLES[path_approx]='fg=yellow'
 
 DISABLE_AUTO_TITLE="true"
 
+# Disable alternate screen in less
+LESS="-XR"
+
 source "${HOME}/.shellrc"
 eval "$(direnv hook zsh)"
 
 fpath=("$HOME/.zsh" $fpath)
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
