@@ -16,11 +16,10 @@ if ! zgen saved; then
   # completions
   zgen load zsh-users/zsh-completions src
 
-  # theme
-  zgen oh-my-zsh themes/kphoen
-
   zgen save
 fi
+
+source "${HOME}/.zsh/aaronjensen.zsh-theme"
 
 ZSH_HIGHLIGHT_STYLES[precommand]='none'
 ZSH_HIGHLIGHT_STYLES[path]='none'
