@@ -6,6 +6,11 @@ git_remote_status_count() {
         ahead=$(command git rev-list ${hook_com[branch]}@{upstream}..HEAD 2>/dev/null | wc -l)
         behind=$(command git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l)
 
+        if [ $ahead -gt 0 ] || [ $behind -gt 0 ]
+        then
+            echo -n "$ZSH_THEME_GIT_COMMITS_PREFIX"
+        fi
+
         if [ $ahead -gt 0 ]
         then
             echo -n "$ZSH_THEME_GIT_COMMITS_AHEAD_PREFIX${ahead// /}$ZSH_THEME_GIT_COMMITS_AHEAD_SUFFIX"
@@ -18,32 +23,24 @@ git_remote_status_count() {
     fi
 }
 
-ZSH_THEME_GIT_COMMITS_AHEAD_PREFIX="+"
-ZSH_THEME_GIT_COMMITS_AHEAD_SUFFIX=""
-ZSH_THEME_GIT_COMMITS_BEHIND_PREFIX="-"
-ZSH_THEME_GIT_COMMITS_BEHIND_SUFFIX=""
 
 PROMPT='%{$fg[blue]%}[%{$reset_color%}'
 PROMPT+='%~'
-PROMPT+='$(git_prompt_info)$(git_prompt_status)$(git_remote_status_count)'
+PROMPT+='$(git_prompt_info)$(git_remote_status_count)'
 PROMPT+='%{$fg[blue]%}]%{$reset_color%}
-%# '
+\$ '
 
 # display exitcode on the right when >0
 return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-RPROMPT='${return_code}%{$reset_color%}'
+RPROMPT='${return_code}%{$reset_color%} %*'
 
-ZSH_THEME_GIT_PROMPT_ADDED="A"
-ZSH_THEME_GIT_PROMPT_MODIFIED="M"
-ZSH_THEME_GIT_PROMPT_DELETED="D"
-ZSH_THEME_GIT_PROMPT_RENAMED="R"
-ZSH_THEME_GIT_PROMPT_UNMERGED="UM"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="UN"
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[blue]%}| %{$fg[yellow]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[blue]%}| %{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=""
-ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=""
-ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE=""
+ZSH_THEME_GIT_COMMITS_PREFIX=" "
+ZSH_THEME_GIT_COMMITS_AHEAD_PREFIX="%{$fg[yellow]%}+"
+ZSH_THEME_GIT_COMMITS_AHEAD_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_COMMITS_BEHIND_PREFIX="%{$fg[red]%}-"
+ZSH_THEME_GIT_COMMITS_BEHIND_SUFFIX="%{$reset_color%}"
