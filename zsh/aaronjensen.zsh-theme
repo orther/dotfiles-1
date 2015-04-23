@@ -23,29 +23,27 @@ ZSH_THEME_GIT_COMMITS_AHEAD_SUFFIX=""
 ZSH_THEME_GIT_COMMITS_BEHIND_PREFIX="-"
 ZSH_THEME_GIT_COMMITS_BEHIND_SUFFIX=""
 
-PROMPT='[%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)$(git_prompt_status)$(git_remote_status_count)]
+PROMPT='%{$fg[blue]%}[%{$reset_color%}'
+PROMPT+='%~'
+PROMPT+='$(git_prompt_info)$(git_prompt_status)$(git_remote_status_count)'
+PROMPT+='%{$fg[blue]%}]%{$reset_color%}
 %# '
-
-ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=""
-ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # display exitcode on the right when >0
 return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-RPROMPT='${return_code}$(git_prompt_status)%{$reset_color%}'
+RPROMPT='${return_code}%{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} ✹"
-ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖"
-ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[grey]%}(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_ADDED="A"
+ZSH_THEME_GIT_PROMPT_MODIFIED="M"
+ZSH_THEME_GIT_PROMPT_DELETED="D"
+ZSH_THEME_GIT_PROMPT_RENAMED="R"
+ZSH_THEME_GIT_PROMPT_UNMERGED="UM"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="UN"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[blue]%}| %{$fg[yellow]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[grey]%}) %{$fg[yellow]%}⚡%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[grey]%})"
-ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE="%{$fg_bold[magenta]%}↓%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE="%{$fg_bold[magenta]%}↑%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE="%{$fg_bold[magenta]%}↕%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="*"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE=""
+ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE=""
+ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE=""
