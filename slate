@@ -49,16 +49,4 @@ config resizePercentOf screenSize
 #
 # bind esc:ctrl grid
 
-bind a:ctrl,cmd,alt,shift sequence focus 'Android Studio' | shell '/usr/bin/open /Applications/Android\ Studio.app'
-bind c:ctrl,cmd,alt,shift sequence focus 'Google Chrome' | shell '/usr/bin/open /Applications/Google\ Chrome.app'
-bind f:ctrl,cmd,alt,shift sequence focus 'Firefox' | shell '/usr/bin/open /Applications/Firefox.app'
-bind i:ctrl,cmd,alt,shift sequence focus 'iTerm' | shell '/usr/bin/open /Applications/iTerm.app'
-bind k:ctrl,cmd,alt,shift sequence focus 'Skype' | shell '/usr/bin/open /Applications/Skype.app'
-bind l:ctrl,cmd,alt,shift sequence focus 'Flowdock' | shell '/usr/bin/open /Applications/Flowdock.app'
-bind m:ctrl,cmd,alt,shift sequence focus 'Messages' | shell '/usr/bin/open /Applications/Messages.app'
-bind s:ctrl,cmd,alt,shift sequence focus 'Safari' | shell '/usr/bin/open /Applications/Safari.app'
-bind x:ctrl,cmd,alt,shift sequence focus 'Mailbox (Beta)' | shell '/usr/bin/open /Applications/Mailbox\ (Beta).app'
-
-# bind i:l,ctrl shell '/usr/bin/open /Applications/iTerm.app'
-# bind c:l,ctrl shell '/usr/bin/open /Applications/Google\ Chrome.app'
 bind `:ctrl relaunch
