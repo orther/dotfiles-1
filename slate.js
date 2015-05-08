@@ -4,37 +4,50 @@ S.configAll({
   "orderScreensLeftToRight" : false
 });
 
-var hyper = "ctrl,cmd,alt,shift"
-
-/*
- * Quick app switching and launching
- * hyper + key to launch app or switch to it.
- */
-var quickSwitchBindings = {
-  "a" : "Android Studio",
-  "c" : "Google Chrome",
-  "f" : "Firefox",
-  "i" : "iTerm",
-  "k" : "Skype",
-  "l" : "Flowdock",
-  "m" : "Messages",
-  "s" : "Safari",
-  "x" : "Mailbox (Beta)"
-};
-
-_.each(quickSwitchBindings, function(app, key) {
-  var appPath = "'/Applications/" + app + ".app'"
-
-  S.bind(key + ":" + hyper, function() {
-    S.op("focus", { "app" : app }).run() ||
-      S.shell("/usr/bin/open " + appPath);
+function bindAll() {
+  /*
+   * Quick app switching and launching
+   * hyper + key to launch app or switch to it.
+   * Use Karabiner to create hyper key, I use holding ';'.
+   */
+  bindQuickSwitch({
+    "a:hyper" : "Android Studio",
+    "c:hyper" : "Google Chrome",
+    "f:hyper" : "Firefox",
+    "i:hyper" : "iTerm",
+    "k:hyper" : "Skype",
+    "l:hyper" : "Flowdock",
+    "m:hyper" : "Messages",
+    "s:hyper" : "Safari",
+    "x:hyper" : "Mailbox (Beta)"
   });
-});
 
-/*
- * Size and move windows
- * Press binding twice to toggle between screens
- */
+  /*
+   * Size and move windows
+   * Press binding twice to toggle between screens
+   */
+  bindWindowSizes({
+    "i:ctrl,cmd"        : "fullscreen",
+    "h:ctrl,cmd"        : "left",
+    "h:ctrl,cmd,shift"  : "topLeft",
+    "k:ctrl,cmd"        : "top",
+    "k:ctrl,cmd,shift"  : "topRight",
+    "l:ctrl,cmd"        : "right",
+    "l:ctrl,cmd,shift"  : "bottomRight",
+    "j:ctrl,cmd"        : "bottom",
+    "j:ctrl,cmd,shift"  : "bottomLeft",
+    "l:ctrl,cmd,alt"    : "rightThird",
+    "h:ctrl,cmd,alt"    : "leftTwoThirds"
+  });
+
+  /*
+   * Miscellaneous bindings
+   */
+  S.bindAll({
+    "`:ctrl" : S.op("relaunch")
+  });
+}
+
 var fullscreen = {
   "x" : "screenOriginX",
   "y" : "screenOriginY",
@@ -77,42 +90,35 @@ var windowSizes = createWindowSizes(fullscreen, {
   "leftTwoThirds" : { "width" : "screenSizeX * 7 / 12" },
 });
 
-var windowSizeBindings = {
-  "i:ctrl,cmd" : "fullscreen",
-  "h:ctrl,cmd" : "left",
-  "h:ctrl,cmd,shift" : "topLeft",
-  "k:ctrl,cmd" : "top",
-  "k:ctrl,cmd,shift" : "topRight",
-  "l:ctrl,cmd" : "right",
-  "l:ctrl,cmd,shift" : "bottomRight",
-  "j:ctrl,cmd" : "bottom",
-  "j:ctrl,cmd,shift" : "bottomLeft",
-  "l:ctrl,cmd,alt" : "rightThird",
-  "h:ctrl,cmd,alt" : "leftTwoThirds"
+function bindWindowSizes(bindings) {
+  _.each(bindings, function(size, key) {
+    S.bind(key, function(win) {
+      if (!win) return false;
+
+      var origRect = win.rect();
+      var move = S.op("move", windowSizes[size]);
+
+      win.doOperation(move);
+
+      if (rectEq(origRect, win.rect())) {
+        move = move.dup({ "screen" : "next" });
+        win.doOperation(move);
+      }
+    });
+  });
 };
 
-_.each(windowSizeBindings, function(size, key) {
-  S.bind(key, function(win) {
-    if (!win) return false;
+function bindQuickSwitch(bindings) {
+  _.each(bindings, function(app, key) {
+    var appPath = "'/Applications/" + app + ".app'"
+    key = expandModifiers(key);
 
-    var origRect = win.rect();
-    var move = S.op("move", windowSizes[size]);
-
-    win.doOperation(move);
-
-    if (rectEq(origRect, win.rect())) {
-      move = move.dup({ "screen" : "next" });
-      win.doOperation(move);
-    }
+    S.bind(key, function() {
+      S.op("focus", { "app" : app }).run() ||
+        S.shell("/usr/bin/open " + appPath);
+    });
   });
-});
-
-/*
- * Miscellaneous bindings
- */
-S.bindAll({
-  "`:ctrl" : S.op("relaunch")
-});
+}
 
 /*
  * Utility functions
@@ -134,3 +140,9 @@ function createWindowSizes(fullscreen, sizes) {
 
   return windowSizes;
 }
+
+function expandModifiers(bind) {
+  return bind.replace("hyper", "ctrl,cmd,alt,shift");
+}
+
+bindAll();
