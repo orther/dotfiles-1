@@ -14,7 +14,6 @@ command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Home
 
 ./setup/brew.sh
 ./setup/mac-defaults.sh
-./setup/divvy-defaults.sh
 ./setup/import-defaults.sh
 ./setup/upgrade-bash.sh
 
