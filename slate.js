@@ -1,7 +1,7 @@
 S.configAll({
   "defaultToCurrentScreen" : true,
   "checkDefaultsOnLoad" : true,
-  "orderScreensLeftToRight" : true
+  "orderScreensLeftToRight" : false
 });
 
 var hyper = "ctrl,cmd,alt,shift"
