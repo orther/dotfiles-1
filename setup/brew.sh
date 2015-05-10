@@ -4,6 +4,8 @@ brew tap caskroom/cask
 brew tap thoughtbot/formulae
 brew update
 
+brew install vim --with-client-server --with-luajit --disable-nls
+
 brew install \
 ack \
 autoconf \

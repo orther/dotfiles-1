@@ -13,7 +13,8 @@ alias df='df -kTh'
 alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 
-alias vim='mvim -v'
+# Let's try non-macvim for its client-server capabilities
+# alias vim='mvim -v'
 
 alias r='`[ -e bin/r ] && echo bin/r || [ -e bin/rails ] && echo bin/rails || echo rails`'
 alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
