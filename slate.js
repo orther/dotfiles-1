@@ -40,6 +40,16 @@ function bindAll() {
     "h:ctrl,cmd,alt"    : "leftTwoThirds"
   });
 
+  /*
+   * These rely on two things being installed:
+   * $ brew install terminal-notifier
+   * $ rvmsudo rvm system do gem install hcl
+   *
+   * Plus the two scripts in my bin folder, hcl-start and hcl-stop.
+   *
+   * You will need to login and set up your tasks:
+   * $ rvm system do hcl tasks
+   */
   bindHarvestCommands({
     "t:h,hyper" : { "name" : "Tch", "start" : "7700466 1658603" },
     "a:h,hyper" : { "name" : "Tch Android", "start" : "7876113 1658609" },
