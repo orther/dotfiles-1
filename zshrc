@@ -35,3 +35,5 @@ source "${HOME}/.shellrc"
 eval "$(direnv hook zsh)"
 
 fpath=("$HOME/.zsh" $fpath)
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
