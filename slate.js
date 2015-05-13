@@ -50,14 +50,14 @@ function bindAll() {
    * You will need to login and set up your tasks:
    * $ rvm system do hcl tasks
    */
-  bindHarvestCommands({
-    "t:h,hyper" : { "name" : "Tch", "start" : "7700466 1658603" },
-    "a:h,hyper" : { "name" : "Tch Android", "start" : "7876113 1658609" },
-    "l:h,hyper" : { "name" : "Tch Labs", "start" : "7968887 1658603" },
-    "i:h,hyper" : { "name" : "Internal", "start" : "7228599 1667144" },
-    "n:h,hyper" : { "name" : "All Hands", "start" : "7228427 1667144" },
-    "s:h,hyper" : { "name" : "Stop", "stop" : true },
-  })
+  // bindHarvestCommands({
+  //   "t:h,hyper" : { "name" : "Tch", "start" : "7700466 1658603" },
+  //   "a:h,hyper" : { "name" : "Tch Android", "start" : "7876113 1658609" },
+  //   "l:h,hyper" : { "name" : "Tch Labs", "start" : "7968887 1658603" },
+  //   "i:h,hyper" : { "name" : "Internal", "start" : "7228599 1667144" },
+  //   "n:h,hyper" : { "name" : "All Hands", "start" : "7228427 1667144" },
+  //   "s:h,hyper" : { "name" : "Stop", "stop" : true },
+  // })
 
   /*
    * Miscellaneous bindings
