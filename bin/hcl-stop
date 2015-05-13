@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+/usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
+  -title "Stopping..." \
+  -message "" \
+  -group "harvest" \
+  -sender com.getharvest.harvestx
+/usr/bin/hcl stop | \
+  /usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
+  -title "Stopped" \
+  -group "harvest" \
+  -sender com.getharvest.harvestx

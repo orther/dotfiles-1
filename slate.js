@@ -40,6 +40,15 @@ function bindAll() {
     "h:ctrl,cmd,alt"    : "leftTwoThirds"
   });
 
+  bindHarvestCommands({
+    "t:h,hyper" : { "name" : "Tch", "start" : "7700466 1658603" },
+    "a:h,hyper" : { "name" : "Tch Android", "start" : "7876113 1658609" },
+    "l:h,hyper" : { "name" : "Tch Labs", "start" : "7968887 1658603" },
+    "i:h,hyper" : { "name" : "Internal", "start" : "7228599 1667144" },
+    "n:h,hyper" : { "name" : "All Hands", "start" : "7228427 1667144" },
+    "s:h,hyper" : { "name" : "Stop", "stop" : true },
+  })
+
   /*
    * Miscellaneous bindings
    */
@@ -90,8 +99,16 @@ var windowSizes = createWindowSizes(fullscreen, {
   "leftTwoThirds" : { "width" : "screenSizeX * 7 / 12" },
 });
 
+var harvestTasks = {
+  "Tch" : {
+    "project_id" : "",
+    "task_id" : ""
+  }
+}
+
 function bindWindowSizes(bindings) {
   _.each(bindings, function(size, key) {
+    key = expandModifiers(key);
     S.bind(key, function(win) {
       if (!win) return false;
 
@@ -117,6 +134,25 @@ function bindQuickSwitch(bindings) {
       S.op("focus", { "app" : app }).run() ||
         S.shell("/usr/bin/open " + appPath);
     });
+  });
+}
+
+function bindHarvestCommands(bindings) {
+  var debug = false;
+  _.each(bindings, function(task, key) {
+    key = expandModifiers(key);
+    if (task.start) {
+      S.bind(key, function() {
+        var result = S.shell("/Users/aaronjensen/.bin/hcl-start '" +
+                          task.name + "' " + task.start, debug);
+        if (debug) S.log(result);
+      });
+    } else if (task.stop ) {
+      S.bind(key, function() {
+        var result = S.shell("/Users/aaronjensen/.bin/hcl-stop", debug);
+        if (debug) S.log(result);
+      });
+    }
   });
 }
 

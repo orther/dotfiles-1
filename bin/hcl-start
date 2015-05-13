@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+/usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
+  -title "Starting..." \
+  -message "$1" \
+  -group "harvest" \
+  -sender com.getharvest.harvestx
+(/usr/bin/hcl resume $2 $3 || /usr/bin/hcl start $2 $3) | \
+  /usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
+  -title "Started" \
+  -group "harvest" \
+  -sender com.getharvest.harvestx

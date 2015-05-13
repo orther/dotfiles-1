@@ -30,3 +30,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install pow
 curl get.pow.cx | sh
+
+# Install hcl for harvest
+echo Installing hcl for harvest, will need sudo...
+rvmsudo rvm system do gem install hcl
