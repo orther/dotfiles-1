@@ -14,5 +14,13 @@
         ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
         KeyCode::SEMICOLON
     </autogen>
+
+    <!-- ; followed by space is difficult to type w/o triggering hyper, this works around it -->
+    <autogen>
+      __KeyToKey__
+        KeyCode::SPACE,
+        ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+        KeyCode::SEMICOLON, KeyCode::SPACE
+    </autogen>
   </item>
 </root>
