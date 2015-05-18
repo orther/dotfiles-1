@@ -5,4 +5,4 @@
         :injections [(require 'pjstadig.humane-test-output)
                      (require 'spyscope.core)
                      (pjstadig.humane-test-output/activate!)]
-        :plugins [[cider/cider-nrepl "0.8.2"]]}}
+        :plugins [[cider/cider-nrepl "0.9.0-SNAPSHOT"]]}}
