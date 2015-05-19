@@ -1305,9 +1305,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>3</string>
+	<string>1</string>
 	<key>NSColorPickerSlidersDefaults</key>
-	<string>3</string>
+	<string>1</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 1</string>
 	<key>NSNavLastRootDirectory</key>
@@ -1362,15 +1362,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1112 266 445 77 0 0 2560 1577 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1524 782 796 475 0 0 2560 1577 </string>
+	<string>909 387 924 485 0 0 2560 1577 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1088 1087 384 129 0 0 2560 1577 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 18 1490 1559 0 0 2560 1577 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1493 1573 0 0 2560 1577 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>753 694 650 530 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 4 1493 1573 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2594,7 +2594,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>DD8E7A65-50C2-4911-B477-4A7E1B980442</string>
+			<string>36F6BB27-2864-4B96-97A3-6F0F39EAEED9</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -3083,7 +3083,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>368E9DC3-2292-44C4-AB0E-6940A6D82405</string>
+			<string>83EE00A4-C1C7-4366-A179-55D30C1BEEA5</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
