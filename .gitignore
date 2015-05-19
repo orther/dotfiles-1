@@ -1,3 +1,4 @@
 pentadactyl/info
 bin/*.app
 lein/self-installs
+/lein/repl-history
