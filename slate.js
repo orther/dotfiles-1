@@ -42,6 +42,9 @@ function bindAll() {
   });
 
   /*
+   * NOTE: I moved these to Keyboard Maestro, which costs $ but has
+   * some great features for this.
+   *
    * These rely on two things being installed:
    * $ brew install terminal-notifier
    * $ rvmsudo rvm system do gem install hcl
