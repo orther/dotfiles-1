@@ -1322,6 +1322,25 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>307</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
 	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -1343,15 +1362,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1112 266 445 77 0 0 2560 1577 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1524 772 924 485 0 0 2560 1577 </string>
+	<string>1524 782 796 475 0 0 2560 1577 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1088 1087 384 129 0 0 2560 1577 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1493 1573 0 0 2560 1577 </string>
+	<string>0 18 1490 1559 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>876 758 650 530 0 0 2560 1577 </string>
+	<string>0 4 1493 1573 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 4 1493 1573 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2520,7 +2539,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>10.71.34.1</string>
+			<string>192.168.59.3</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -2528,7 +2547,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh 10.71.34.1</string>
+			<string>ssh 192.168.59.3</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2575,7 +2594,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>24EC7DFD-30F6-4BC0-AA2C-465CBCA18F04</string>
+			<string>DD8E7A65-50C2-4911-B477-4A7E1B980442</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -2643,11 +2662,11 @@
 			<key>Name</key>
 			<string>aaron-mbp</string>
 			<key>Non Ascii Font</key>
-			<string>InconsolataForPowerline-g 11</string>
+			<string>Inconsolata-g 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InconsolataForPowerline-g 14</string>
+			<string>Inconsolata-g 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3009,7 +3028,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>fd20:ee27:f0f0:43c6:bc36:103e:cb31:2c95</string>
+			<string>fd20:ee27:f0f0:43c6:b122:3654:1af:fb37</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -3017,7 +3036,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh fd20:ee27:f0f0:43c6:bc36:103e:cb31:2c95</string>
+			<string>ssh fd20:ee27:f0f0:43c6:b122:3654:1af:fb37</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3064,7 +3083,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>A6401352-5345-4535-833D-C6CC4532628B</string>
+			<string>368E9DC3-2292-44C4-AB0E-6940A6D82405</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -3132,11 +3151,11 @@
 			<key>Name</key>
 			<string>aaron-mbp</string>
 			<key>Non Ascii Font</key>
-			<string>InconsolataForPowerline-g 11</string>
+			<string>Inconsolata-g 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InconsolataForPowerline-g 14</string>
+			<string>Inconsolata-g 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3313,6 +3332,10 @@
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453503703.84811503</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>453701196.79439998</real>
 	<key>NotFirstRun</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -3380,12 +3403,14 @@
 	<integer>3</integer>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
 	<string>http://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-28T05:53:17Z</date>
+	<date>2015-05-19T04:06:28Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3461,6 +3486,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
