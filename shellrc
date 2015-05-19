@@ -36,3 +36,9 @@ export DOCKER_HOST=tcp://localhost:4243
 
 # Android
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+if [ $ITERM_PROFILE ]; then
+  echo -e "\033]6;1;bg;red;brightness;28\a"
+  echo -e "\033]6;1;bg;blue;brightness;28\a"
+  echo -e "\033]6;1;bg;green;brightness;28\a"
+fi
