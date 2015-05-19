@@ -966,13 +966,94 @@
 			<key>UID</key>
 			<string>866CD81A-D9E2-43DD-99B6-FF17022A7C49</string>
 		</dict>
+		<dict>
+			<key>Activate</key>
+			<string>Normal</string>
+			<key>AddToMacroPalette</key>
+			<false/>
+			<key>AddToStatusMenu</key>
+			<false/>
+			<key>IsActive</key>
+			<true/>
+			<key>IsBrowserContainerOpen</key>
+			<true/>
+			<key>KeyCode</key>
+			<integer>32767</integer>
+			<key>Macros</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>AllWindows</key>
+							<true/>
+							<key>AlreadyActivatedActionType</key>
+							<string>Normal</string>
+							<key>Application</key>
+							<dict>
+								<key>BundleIdentifier</key>
+								<string>org.mozilla.firefox</string>
+								<key>Name</key>
+								<string>Firefox</string>
+								<key>NewFile</key>
+								<string>/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app</string>
+							</dict>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ActivateApplication</string>
+							<key>ReopenWindows</key>
+							<false/>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<false/>
+					<key>ModificationDate</key>
+					<real>453752576.40268397</real>
+					<key>Name</key>
+					<string>Firefox</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>3</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>6912</integer>
+						</dict>
+					</array>
+					<key>UID</key>
+					<string>AC81575F-6CF7-49E0-BC8C-2FC09F2A664B</string>
+				</dict>
+			</array>
+			<key>Modifiers</key>
+			<integer>0</integer>
+			<key>Name</key>
+			<string>Quick Switch</string>
+			<key>Targeting</key>
+			<dict>
+				<key>Targeting</key>
+				<string>All</string>
+				<key>TargetingApps</key>
+				<array/>
+			</dict>
+			<key>UID</key>
+			<string>CF6CEF37-89E0-4A49-890A-4CD6357C6209</string>
+		</dict>
 	</array>
 	<key>MacroPreferencesVersion</key>
 	<integer>60</integer>
 	<key>PreferenceSaveUUID</key>
-	<string>12A6BAA0-CA82-418D-9466-3D199943182E</string>
+	<string>1EF8DCA1-32DC-4B00-A6F4-A7727D2A1D79</string>
 	<key>PreferenceSavedDate</key>
-	<string>2015_05_14</string>
+	<string>2015_05_19</string>
 	<key>Version</key>
 	<string>6.4.8</string>
 </dict>
