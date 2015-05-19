@@ -37,7 +37,8 @@ function bindAll() {
     "j:ctrl,cmd"        : "bottom",
     "j:ctrl,cmd,shift"  : "bottomLeft",
     "l:ctrl,cmd,alt"    : "rightThird",
-    "h:ctrl,cmd,alt"    : "leftTwoThirds"
+    "h:ctrl,cmd,alt"    : "leftTwoThirds",
+    "m:ctrl,cmd"        : "middleHalf"
   });
 
   /*
@@ -82,7 +83,11 @@ var windowSizes = createWindowSizes(fullscreen, {
     "height" : "screenSizeY / 2"
   },
   "top" : { "height" : "screenSizeY / 2" },
-  "topRight" : { "height" : "screenSizeY / 2" },
+  "topRight" : {
+    "x" : "screenOriginX + screenSizeX / 2",
+    "width" : "screenSizeX / 2",
+    "height" : "screenSizeY / 2"
+  },
   "right" : {
     "x" : "screenOriginX + screenSizeX / 2",
     "width" : "screenSizeX / 2"
@@ -107,6 +112,10 @@ var windowSizes = createWindowSizes(fullscreen, {
     "width" : "screenSizeX * 5 / 12"
   },
   "leftTwoThirds" : { "width" : "screenSizeX * 7 / 12" },
+  "middleHalf" : {
+    "x" : "screenOriginX + screenSizeX / 4",
+    "width" : "screenSizeX / 2"
+  },
 });
 
 var harvestTasks = {
