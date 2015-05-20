@@ -33,7 +33,9 @@ PROMPT+='%{$fg[blue]%}]%{$reset_color%}
 # display exitcode on the right when >0
 return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-RPROMPT='${return_code}%{$reset_color%} %*'
+local _lineup=$'\e[1A'
+local _linedown=$'\e[1B'
+RPROMPT='%{${_lineup}%}${return_code}%{$reset_color%} %*%{${_linedown}%}'
 
 # a | b
 # a │ b
