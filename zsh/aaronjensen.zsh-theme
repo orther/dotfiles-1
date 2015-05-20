@@ -23,17 +23,28 @@ git_remote_status_count() {
     fi
 }
 
+function precmd {
+    local TERMWIDTH
+    (( TERMWIDTH = ${COLUMNS} - 1 ))
+    local RIGHT="${return_code}%{$reset_color%} %*"
+    local LEFT='%{$fg[blue]%}[%{$reset_color%}'
+    LEFT+='%~'
+    LEFT+='$(git_prompt_info)$(git_remote_status_count)'
+    LEFT+='%{$fg[blue]%}]%{$reset_color%}'
 
-PROMPT='%{$fg[blue]%}[%{$reset_color%}'
-PROMPT+='%~'
-PROMPT+='$(git_prompt_info)$(git_remote_status_count)'
-PROMPT+='%{$fg[blue]%}]%{$reset_color%}
-\$ '
+    FOO=$(print -P ${(%)LEFT} | strip-ctl)
+    echo $FOO
+    echo ${#FOO}
+    echo ${#RIGHT}
+    PROMPT="${(e)LEFT}${(e)RIGHT}
+\$ "
+}
+
+
 
 # display exitcode on the right when >0
 return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-RPROMPT='${return_code}%{$reset_color%} %*'
 
 # a | b
 # a │ b
