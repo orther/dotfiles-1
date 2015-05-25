@@ -157,8 +157,11 @@ defaults write com.apple.iTunes disablePing -bool true
 # Make ⌘ + F focus the search input in iTunes
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
+# Disable focus ring animation
+defaults write -globalDomain NSUseAnimatedFocusRing -bool NO
+
 # Reset Launchpad
-[ -e ~/Library/Application\ Support/Dock/*.db ] && rm ~/Library/Application\ Support/Dock/*.db
+[ -e "~/Library/Application Support/Dock/*.db" ] && rm ~/Library/Application\ Support/Dock/*.db
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
