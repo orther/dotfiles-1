@@ -951,6 +951,54 @@
 					<key>UID</key>
 					<string>123B4BAA-DA34-4450-BFCA-47DC7D7CA374</string>
 				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>DisplayKind</key>
+							<string>Asynchronously</string>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ExecuteShellScript</string>
+							<key>Path</key>
+							<string></string>
+							<key>Text</key>
+							<string>~/.bin/hcl-start "Recruiting" 1378601 1667144 </string>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>TrimResults</key>
+							<true/>
+							<key>TrimResultsNew</key>
+							<true/>
+							<key>UseText</key>
+							<true/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>454880880.610147</real>
+					<key>Name</key>
+					<string>R - Recruiting</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>4</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>6912</integer>
+						</dict>
+					</array>
+					<key>UID</key>
+					<string>D8FA4FE8-A93B-4F1A-B152-7C0F69F2CEBB</string>
+				</dict>
 			</array>
 			<key>Modifiers</key>
 			<integer>0</integer>
@@ -1051,9 +1099,9 @@
 	<key>MacroPreferencesVersion</key>
 	<integer>60</integer>
 	<key>PreferenceSaveUUID</key>
-	<string>1EF8DCA1-32DC-4B00-A6F4-A7727D2A1D79</string>
+	<string>BCF4406B-FA40-40D5-B58C-AA57FB07CEBD</string>
 	<key>PreferenceSavedDate</key>
-	<string>2015_05_19</string>
+	<string>2015_06_01</string>
 	<key>Version</key>
 	<string>6.4.8</string>
 </dict>
