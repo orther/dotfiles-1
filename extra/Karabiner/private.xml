@@ -13,10 +13,10 @@
   <item>
     <name>Kinesis tweaks</name>
 
-    <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
     <item>
       <name>Hold esc for control</name>
       <identifier>aaronjensen.kinesis.esc_ctrl</identifier>
+      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
 
       <!-- Hold esc for ctrl -->
       <autogen>
@@ -32,6 +32,8 @@
     <item>
       <name>COMMAND_R -> Hyper</name>
       <identifier>aaronjensen.kinesis.hyper</identifier>
+      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+
 
       <!-- Hyper -->
       <autogen>
