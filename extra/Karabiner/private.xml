@@ -1,5 +1,30 @@
 <?xml version="1.0"?>
 <root>
+  <devicevendordef>
+    <vendorname>KINESIS</vendorname>
+    <vendorid>0x05f3</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>ADVANTAGE</productname>
+    <productid>0x0007</productid>
+  </deviceproductdef>
+
+  <item>
+    <name>Kinesis tweaks</name>
+    <identifier>aaronjensen.kinesis</identifier>
+    <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+
+    <autogen>
+      __KeyOverlaidModifier__
+        KeyCode::ESCAPE,
+        ModifierFlag::NONE,
+        KeyCode::CONTROL_L,
+        ModifierFlag::NONE,
+        KeyCode::ESCAPE
+    </autogen>
+  </item>
+
   <item>
     <name>Remap ; to Hyper when held down, ; when typed normally</name>
     <appendix>OS X doesn't have a Hyper. This maps right control to Control + Shift + Option + Command.</appendix>
