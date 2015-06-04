@@ -15,6 +15,7 @@
     <identifier>aaronjensen.kinesis</identifier>
     <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
 
+    <!-- Hold esc for ctrl -->
     <autogen>
       __KeyOverlaidModifier__
         KeyCode::ESCAPE,
@@ -24,6 +25,7 @@
         KeyCode::ESCAPE
     </autogen>
 
+    <!-- Hyper -->
     <autogen>
       __KeyToKey__
         KeyCode::COMMAND_R,
