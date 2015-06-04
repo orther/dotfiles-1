@@ -12,26 +12,35 @@
 
   <item>
     <name>Kinesis tweaks</name>
-    <identifier>aaronjensen.kinesis</identifier>
-    <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
 
-    <!-- Hold esc for ctrl -->
-    <autogen>
-      __KeyOverlaidModifier__
+    <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+    <item>
+      <name>Hold esc for control</name>
+      <identifier>aaronjensen.kinesis.esc_ctrl</identifier>
+
+      <!-- Hold esc for ctrl -->
+      <autogen>
+        __KeyOverlaidModifier__
         KeyCode::ESCAPE,
         ModifierFlag::NONE,
         KeyCode::CONTROL_L,
         ModifierFlag::NONE,
         KeyCode::ESCAPE
-    </autogen>
+      </autogen>
+    </item>
 
-    <!-- Hyper -->
-    <autogen>
-      __KeyToKey__
+    <item>
+      <name>COMMAND_R -> Hyper</name>
+      <identifier>aaronjensen.kinesis.hyper</identifier>
+
+      <!-- Hyper -->
+      <autogen>
+        __KeyToKey__
         KeyCode::COMMAND_R,
         KeyCode::COMMAND_L,
         ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
-    </autogen>
+      </autogen>
+    </item>
   </item>
 
   <item>
@@ -42,19 +51,19 @@
 
     <autogen>
       __KeyOverlaidModifier__
-        KeyCode::SEMICOLON,
-        ModifierFlag::NONE,
-        KeyCode::COMMAND_L,
-        ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
-        KeyCode::SEMICOLON
+      KeyCode::SEMICOLON,
+      ModifierFlag::NONE,
+      KeyCode::COMMAND_L,
+      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+      KeyCode::SEMICOLON
     </autogen>
 
     <!-- ; followed by space is difficult to type w/o triggering hyper, this works around it -->
     <autogen>
       __KeyToKey__
-        KeyCode::SPACE,
-        ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
-        KeyCode::SEMICOLON, KeyCode::SPACE
+      KeyCode::SPACE,
+      ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+      KeyCode::SEMICOLON, KeyCode::SPACE
     </autogen>
   </item>
 </root>
