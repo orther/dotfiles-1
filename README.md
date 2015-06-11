@@ -29,6 +29,12 @@ Look in the setup folder for other scripts to run to setup various things.
 
 Point your preferences to ~/.dotfiles/iterm in iterm2
 
+### [cVim](https://github.com/1995eaton/chromium-vim) setup
+
+Update the `configpath` in `cvimrc` to your home dir.
+
+In Chrome, do `:source /your/home/.cvimrc`. 
+
 ### Kinesis Keyboard stuff
 
 ![Symbol
