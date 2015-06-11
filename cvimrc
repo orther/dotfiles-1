@@ -1,0 +1,24 @@
+"css: https://gist.github.com/aaronjensen/c422b3bad2c83d0fbe26
+"config: https://gist.github.com/aaronjensen/90a959239260d619d67b
+"let autoupdategist = "https://gist.github.com/aaronjensen/90a959239260d619d67b"
+let mapleader = ","
+let blacklists = ["https://mail.google.com/*","*://www.browserstack.com/*","https://www.pivotaltracker.com/*","http://localhost/*","https://inbox.google.com/*","*://www.kongregate.com/*","https://docs.google.com/*","https://trello.com/*","http://www.eguneys.com/*","http://thetypingcat.com/*","http://klava.org/*","http://www.keybr.com/*"]
+site '*://github.com/*' {
+  unmap t
+  unmap r
+  " leave t and r
+  let hintcharacters = "asdfgqwezxcvb"
+}
+site '*://feedly.com/*' {
+  unmap j
+  unmap k
+}
+site 'https://www.google.com/*' {
+  " t doesn't work on google
+  let hintcharacters = "asdfgqwerzxcvb"
+}
+unmap x
+map <leader>p :pintab<cr>
+
+let configpath = '/Users/aaronjensen/.cvimrc'
+set localconfig
