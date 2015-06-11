@@ -32,4 +32,4 @@ Point your preferences to ~/.dotfiles/iterm in iterm2
 ### Kinesis Keyboard stuff
 
 ![Symbol
-overlay](http://screenshots-dx37.s3.amazonaws.com/monosnap/kinesis-layout-empty.jpg_8161056_2015-06-10_23-49-34.png)
+overlay](http://screenshots-dx37.s3.amazonaws.com/monosnap/kinesis-layout-empty.jpg.png)

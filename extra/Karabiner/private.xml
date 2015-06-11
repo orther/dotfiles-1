@@ -184,6 +184,11 @@
         KeyCode::C, ModifierFlag::MY_SYMBOLS,
         KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
       </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::M, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
+      </autogen>
     </item>
   </item>
 
