@@ -59,36 +59,36 @@
         KeyCode::ESCAPE
       </autogen>
 
-      <!-- D -> ( -->
-      <autogen>
-        __KeyToKey__
-        KeyCode::D, ModifierFlag::MY_SYMBOLS,
-        KeyCode::KEY_9, ModifierFlag::SHIFT_L
-      </autogen>
-      <!-- F -> ) -->
+      <!-- F -> ( -->
       <autogen>
         __KeyToKey__
         KeyCode::F, ModifierFlag::MY_SYMBOLS,
-        KeyCode::KEY_0, ModifierFlag::SHIFT_L
+        KeyCode::KEY_9, ModifierFlag::SHIFT_L
       </autogen>
-
-      <!-- L -> [ -->
-      <autogen>
-        __KeyToKey__
-        KeyCode::L, ModifierFlag::MY_SYMBOLS,
-        KeyCode::BRACKET_LEFT
-      </autogen>
-      <!-- ; -> ] -->
-      <autogen>
-        __KeyToKey__
-        KeyCode::SEMICOLON, ModifierFlag::MY_SYMBOLS,
-        KeyCode::BRACKET_RIGHT
-      </autogen>
-
-      <!-- J -> { -->
+      <!-- J -> ) -->
       <autogen>
         __KeyToKey__
         KeyCode::J, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_0, ModifierFlag::SHIFT_L
+      </autogen>
+
+      <!-- S -> [ -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::S, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BRACKET_LEFT
+      </autogen>
+      <!-- L -> ] -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BRACKET_RIGHT
+      </autogen>
+
+      <!-- D -> { -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::MY_SYMBOLS,
         KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
       </autogen>
       <!-- K -> } -->
@@ -117,11 +117,62 @@
         KeyCode::H, ModifierFlag::MY_SYMBOLS,
         KeyCode::MINUS, ModifierFlag::SHIFT_L
       </autogen>
-      <!-- G -> - -->
+      <!-- G -> = -->
       <autogen>
         __KeyToKey__
         KeyCode::G, ModifierFlag::MY_SYMBOLS,
+        KeyCode::EQUAL
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::Q, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_1, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_2, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::E, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_3, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::R, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_4, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::T, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_5, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::Y, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_6, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::U, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_7, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::I, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_8, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::O, ModifierFlag::MY_SYMBOLS,
         KeyCode::MINUS
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::P, ModifierFlag::MY_SYMBOLS,
+        KeyCode::EQUAL, ModifierFlag::SHIFT_L
       </autogen>
     </item>
   </item>
