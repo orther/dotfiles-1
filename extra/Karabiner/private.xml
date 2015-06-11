@@ -10,6 +10,8 @@
     <productid>0x0007</productid>
   </deviceproductdef>
 
+  <modifierdef>MY_SYMBOLS</modifierdef>
+
   <item>
     <name>Kinesis tweaks</name>
 
@@ -34,13 +36,92 @@
       <identifier>aaronjensen.kinesis.hyper</identifier>
       <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
 
-
       <!-- Hyper -->
       <autogen>
         __KeyToKey__
         KeyCode::COMMAND_R,
         KeyCode::COMMAND_L,
         ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>Symbol Overlay</name>
+      <identifier>aaronjensen.kinesis.symbol_overlay</identifier>
+      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::ESCAPE,
+        ModifierFlag::NONE,
+        KeyCode::VK_MODIFIER_MY_SYMBOLS,
+        ModifierFlag::NONE,
+        KeyCode::ESCAPE
+      </autogen>
+
+      <!-- D -> ( -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_9, ModifierFlag::SHIFT_L
+      </autogen>
+      <!-- F -> ) -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::F, ModifierFlag::MY_SYMBOLS,
+        KeyCode::KEY_0, ModifierFlag::SHIFT_L
+      </autogen>
+
+      <!-- L -> [ -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BRACKET_LEFT
+      </autogen>
+      <!-- ; -> ] -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BRACKET_RIGHT
+      </autogen>
+
+      <!-- J -> { -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
+      </autogen>
+      <!-- K -> } -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::MY_SYMBOLS,
+        KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+      </autogen>
+
+      <!-- , -> < -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::COMMA, ModifierFlag::MY_SYMBOLS,
+        KeyCode::COMMA, ModifierFlag::SHIFT_L
+      </autogen>
+      <!-- . -> > -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::DOT, ModifierFlag::MY_SYMBOLS,
+        KeyCode::DOT, ModifierFlag::SHIFT_L
+      </autogen>
+
+      <!-- H -> _ -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::H, ModifierFlag::MY_SYMBOLS,
+        KeyCode::MINUS, ModifierFlag::SHIFT_L
+      </autogen>
+      <!-- G -> - -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::G, ModifierFlag::MY_SYMBOLS,
+        KeyCode::MINUS
       </autogen>
     </item>
   </item>
