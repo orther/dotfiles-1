@@ -32,7 +32,7 @@
     </item>
 
     <item>
-      <name>COMMAND_R -> Hyper</name>
+      <name>COMMAND_R -> Hyper (Cmd+Shift+Ctrl+Opt)</name>
       <identifier>aaronjensen.kinesis.hyper</identifier>
       <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
 
@@ -46,7 +46,7 @@
     </item>
 
     <item>
-      <name>DANISH_DOLLAR -> Cmd+Shift+Opt</name>
+      <name>DANISH_DOLLAR -> Super (Cmd+Ctrl+Opt)</name>
       <identifier>aaronjensen.kinesis.super</identifier>
       <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
 
