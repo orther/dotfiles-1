@@ -38,3 +38,6 @@ stty stop undef
 [[ -s "$HOME/.bash_private" ]] && source "$HOME/.bash_private"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 eval "$(direnv hook bash)"
+
+export NVM_DIR="/Users/aaronjensen/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

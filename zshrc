@@ -35,3 +35,6 @@ source "${HOME}/.shellrc"
 eval "$(direnv hook zsh)"
 
 fpath=("$HOME/.zsh" $fpath)
+
+export NVM_DIR="/Users/aaronjensen/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
