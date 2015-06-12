@@ -46,6 +46,20 @@
     </item>
 
     <item>
+      <name>DANISH_DOLLAR -> Cmd+Shift+Opt</name>
+      <identifier>aaronjensen.kinesis.super</identifier>
+      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+
+      <!-- Super -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::DANISH_DOLLAR,
+        KeyCode::COMMAND_L,
+        ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+
+    <item>
       <name>Symbol Overlay</name>
       <identifier>aaronjensen.kinesis.symbol_overlay</identifier>
       <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
