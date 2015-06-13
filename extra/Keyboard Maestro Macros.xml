@@ -999,6 +999,54 @@
 					<key>UID</key>
 					<string>D8FA4FE8-A93B-4F1A-B152-7C0F69F2CEBB</string>
 				</dict>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>DisplayKind</key>
+							<string>Asynchronously</string>
+							<key>IsActive</key>
+							<true/>
+							<key>IsDisclosed</key>
+							<true/>
+							<key>MacroActionType</key>
+							<string>ExecuteShellScript</string>
+							<key>Path</key>
+							<string></string>
+							<key>Text</key>
+							<string>~/.bin/hcl-start "Aduro" 7795626 1658603</string>
+							<key>TimeOutAbortsMacro</key>
+							<true/>
+							<key>TrimResults</key>
+							<true/>
+							<key>TrimResultsNew</key>
+							<true/>
+							<key>UseText</key>
+							<true/>
+						</dict>
+					</array>
+					<key>IsActive</key>
+					<true/>
+					<key>ModificationDate</key>
+					<real>455850791.80449998</real>
+					<key>Name</key>
+					<string>D - Aduro</string>
+					<key>Triggers</key>
+					<array>
+						<dict>
+							<key>FireType</key>
+							<string>Pressed</string>
+							<key>KeyCode</key>
+							<integer>4</integer>
+							<key>MacroTriggerType</key>
+							<string>HotKey</string>
+							<key>Modifiers</key>
+							<integer>6912</integer>
+						</dict>
+					</array>
+					<key>UID</key>
+					<string>1F57619F-4139-4235-9CB9-CDC635510DFD</string>
+				</dict>
 			</array>
 			<key>Modifiers</key>
 			<integer>0</integer>
@@ -1099,9 +1147,9 @@
 	<key>MacroPreferencesVersion</key>
 	<integer>60</integer>
 	<key>PreferenceSaveUUID</key>
-	<string>BCF4406B-FA40-40D5-B58C-AA57FB07CEBD</string>
+	<string>C6E50DDC-1ACB-4CAD-AB41-0F12B4F584AA</string>
 	<key>PreferenceSavedDate</key>
-	<string>2015_06_01</string>
+	<string>2015_06_12</string>
 	<key>Version</key>
 	<string>6.4.8</string>
 </dict>
