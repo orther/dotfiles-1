@@ -5,7 +5,23 @@
 #   -message "$1" \
 #   -group "harvest" \
 #   -sender com.getharvest.harvestx
-(/usr/bin/hcl resume $2 $3 || /usr/bin/hcl start $2 $3) | \
+
+project=$2
+task=$3
+
+resume() {
+  output=$(/usr/bin/hcl resume $project $task)
+
+  # resume is not idempotent, this is a slow, but easy way to
+  # make sure we don't inadvertently stop our timer.
+  /usr/bin/hcl | grep -q \(running\)
+  if [ $? -ne 0 ]; then
+    output=$(/usr/bin/hcl resume $project $task)
+  fi
+  echo $output
+}
+
+(resume || /usr/bin/hcl start $project $task) | \
   /usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
   -title "Started" \
   -group "harvest" \
