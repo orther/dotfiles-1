@@ -9,6 +9,16 @@ $ git clone git://github.com/aaronjensen/dotfiles.git ~/.dotfiles && ~/.dotfiles
 Or if you're me and/or you want all my default apps installed (see
 `setup/brew.sh`):
 
+### Git config
+
+You can add your name/email to `~/.config/git/config`. Here's an example:
+
+```
+[user]
+  name = Your name
+  email = yourname@example.com
+```
+
 ### Installation + all my homebrew apps
 
 ```bash
