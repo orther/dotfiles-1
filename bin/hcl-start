@@ -10,18 +10,13 @@ project=$2
 task=$3
 
 start_or_resume() {
+  # stop it just in case because resume is not idempotent
+  /usr/bin/hcl stop
   output=$(/usr/bin/hcl resume $project $task)
 
   if [ $? -ne 0 ]; then
     # the task has not started yet, start it
     output=$(/usr/bin/hcl start $project $task)
-  else
-    # resume is not idempotent, this is a slow, but easy way to
-    # make sure we don't inadvertently stop our timer.
-    /usr/bin/hcl | grep -q \(running\)
-    if [ $? -ne 0 ]; then
-      output=$(/usr/bin/hcl resume $project $task)
-    fi
   fi
 
   echo $output
