@@ -103,3 +103,5 @@
 	helper = osxkeychain
 [status]
 	showUntrackedFiles = all
+[rebase]
+	autosquash = true
