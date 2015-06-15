@@ -11,7 +11,7 @@ Or if you're me and/or you want all my default apps installed (see
 
 ### Git config
 
-You can add your name/email to `~/.config/git/config`. Here's an example:
+You can add your name/email to `~/.gitconfig_private`. Here's an example:
 
 ```
 [user]
