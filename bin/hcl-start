@@ -6,23 +6,10 @@
 #   -group "harvest" \
 #   -sender com.getharvest.harvestx
 
-project=$2
-task=$3
+# Stop first because resume isn't idempotent
+/usr/bin/hcl stop
 
-start_or_resume() {
-  # stop it just in case because resume is not idempotent
-  /usr/bin/hcl stop
-  output=$(/usr/bin/hcl resume $project $task)
-
-  if [ $? -ne 0 ]; then
-    # the task has not started yet, start it
-    output=$(/usr/bin/hcl start $project $task)
-  fi
-
-  echo $output
-}
-
-start_or_resume | \
+(/usr/bin/hcl resume $2 $3 || /usr/bin/hcl start $2 $3) | \
   /usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
   -title "Started" \
   -group "harvest" \
