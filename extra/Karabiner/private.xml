@@ -64,7 +64,7 @@
       <identifier>aaronjensen.kinesis.symbol_overlay</identifier>
       <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
       <appendix>Hold down esc to change keys to:</appendix>
-      <appendix>!@#$%^&*-+</appendix>
+      <appendix>!@#$%^&amp;*-+</appendix>
       <appendix>a[{(=_)}];</appendix>
       <appendix>zx~`bn|&lt;&gt;/</appendix>
 
