@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
 ) && ~/.vim/setup.sh )
 
 # Install Homebrew
-command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ./setup/brew.sh
 ./setup/mac-defaults.sh
