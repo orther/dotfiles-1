@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 brew tap homebrew/dupes
-brew tap caskroom/cask
+brew install caskroom/cask/brew-cask
 brew tap thoughtbot/formulae
 brew update
 
