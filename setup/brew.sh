@@ -52,7 +52,6 @@ export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 brew cask install alfred
 brew cask install android-file-transfer
 brew cask install caffeine
-brew cask install copy
 brew cask install dropbox
 brew cask install firefox
 brew cask install flowdock
