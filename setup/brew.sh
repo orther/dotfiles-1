@@ -26,7 +26,6 @@ imagemagick \
 jpeg \
 libevent \
 libtiff \
-macvim \
 memcached \
 mongodb \
 mysql \
@@ -46,6 +45,8 @@ urlview \
 wemux \
 wget \
 zsh
+
+brew install macvim --with-cscope --with-luajit
 
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 brew cask install alfred
