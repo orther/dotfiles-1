@@ -29,10 +29,10 @@ brew install memcached
 brew install mongodb
 brew install mysql
 brew install pcre
-brew install phantomjs
+# brew install phantomjs
 brew install pick
 brew install postgresql
-brew install qt
+# brew install qt
 brew install readline
 brew install reattach-to-user-namespace
 brew install ssh-copy-id
