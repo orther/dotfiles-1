@@ -5,7 +5,7 @@
 #   -message "" \
 #   -group "harvest" \
 #   -sender com.getharvest.harvestx
-/usr/bin/hcl stop | \
+/Library/Ruby/bin/hcl stop | \
   /usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
   -title "Stopped" \
   -group "harvest" \
