@@ -72,7 +72,6 @@
       <autogen>
         __KeyOverlaidModifier__
         KeyCode::ESCAPE,
-        ModifierFlag::NONE,
         KeyCode::VK_MODIFIER_MY_SYMBOLS,
         ModifierFlag::NONE,
         KeyCode::ESCAPE
