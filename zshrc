@@ -19,6 +19,8 @@ if ! zgen saved; then
   zgen save
 fi
 
+compdef g='git'
+
 source "${HOME}/.zsh/aaronjensen.zsh-theme"
 
 ZSH_HIGHLIGHT_STYLES[precommand]='none'
