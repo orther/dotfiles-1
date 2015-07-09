@@ -11,7 +11,7 @@ function bindAll() {
    * Use Karabiner to create hyper key, I use holding ';'.
    */
   bindQuickSwitch({
-    "a:hyper" : "Android Studio",
+    "a:hyper" : "Atom",
     "c:hyper" : "Google Chrome",
     "f:hyper" : "Firefox",
     "i:hyper" : "iTerm",
