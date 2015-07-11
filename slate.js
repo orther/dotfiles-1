@@ -29,15 +29,15 @@ function bindAll() {
   bindWindowSizes({
     "i:ctrl,cmd"        : "fullscreen",
     "h:ctrl,cmd"        : "left",
-    "h:ctrl,cmd,shift"  : "topLeft",
     "k:ctrl,cmd"        : "top",
-    "k:ctrl,cmd,shift"  : "topRight",
     "l:ctrl,cmd"        : "right",
-    "l:ctrl,cmd,shift"  : "bottomRight",
     "j:ctrl,cmd"        : "bottom",
-    "j:ctrl,cmd,shift"  : "bottomLeft",
-    "l:ctrl,cmd,alt"    : "rightThird",
-    "h:ctrl,cmd,alt"    : "leftTwoThirds",
+    "h:j,super"         : "topLeft",
+    "k:j,super"         : "topRight",
+    "l:j,super"         : "bottomRight",
+    "j:j,super"         : "bottomLeft",
+    "l:ctrl,cmd,shift"  : "rightThird",
+    "h:ctrl,cmd,shift"  : "leftTwoThirds",
     "m:ctrl,cmd"        : "middleHalf"
   });
 
@@ -200,7 +200,9 @@ function createWindowSizes(fullscreen, sizes) {
 }
 
 function expandModifiers(bind) {
-  return bind.replace("hyper", "ctrl,cmd,alt,shift");
+  return bind
+    .replace("hyper", "ctrl,cmd,alt,shift")
+    .replace("super", "ctrl,cmd,alt");
 }
 
 bindAll();
