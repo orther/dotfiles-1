@@ -1,5 +1,6 @@
 source "${HOME}/.dotfiles/zgen/zgen.zsh"
 
+# After making a change here, do a zgen update and restart zsh
 if ! zgen saved; then
   echo "Creating a zgen save"
 
@@ -11,6 +12,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/lein
   zgen oh-my-zsh plugins/ruby
   zgen oh-my-zsh plugins/rvm
+  zgen oh-my-zsh plugins/nvm
   zgen load zsh-users/zsh-syntax-highlighting
 
   # completions
