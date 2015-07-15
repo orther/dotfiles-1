@@ -38,7 +38,7 @@ function bindAll() {
     "j:j,super"         : "bottomLeft",
     "l:ctrl,cmd,shift"  : "rightThird",
     "h:ctrl,cmd,shift"  : "leftTwoThirds",
-    "m:ctrl,cmd"        : "middleHalf"
+    "m:j,super"         : "middleHalf"
   });
 
   /*
