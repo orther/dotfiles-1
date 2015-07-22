@@ -19,7 +19,9 @@ function bindAll() {
     "l:hyper" : "Flowdock",
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
-    "x:hyper" : "Mailbox (Beta)"
+    "v:hyper" : "nvALT",
+    "x:hyper" : "Mailbox (Beta)",
+    "z:hyper" : "Slack"
   });
 
   /*
