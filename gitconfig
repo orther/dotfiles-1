@@ -19,7 +19,8 @@
   f = fetch --prune
   pre = !git fetch --prune --all && git rebase
   puo = push -u origin HEAD
-  cleanbr = !git branch -r --no-color --merged | grep -v \"/\\(master\\|develop\\|integration\\|current-feature\\|production\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | sed \"s/\\// :/\" | xargs -L1 git push && git branch --no-color --merged | grep -v \" \\(master\\|develop\\|integration\\|current-feature\\|production\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | xargs -L1 git branch -d
+  cleanbr = !git branch --no-color --merged | grep -v \" \\(master\\|develop\\|integration\\|current-feature\\|production\\|staging\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | xargs -L1 git branch -d
+  cleanbra = !git branch -r --no-color --merged | grep -v \"/\\(master\\|develop\\|integration\\|current-feature\\|production\\|staging\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | sed \"s/\\// :/\" | xargs -L1 git push && git cleanbr
   di = diff
   dc = diff --cached
   amend = commit --amend
@@ -104,3 +105,7 @@
 	showUntrackedFiles = all
 [rebase]
 	autosquash = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
