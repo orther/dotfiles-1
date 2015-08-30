@@ -21,6 +21,7 @@
   puo = push -u origin HEAD
   cleanbr = !git branch --no-color --merged | grep -v \" \\(master\\|develop\\|integration\\|current-feature\\|production\\|staging\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | xargs -L1 git branch -d
   cleanbra = !git branch -r --no-color --merged | grep -v \"/\\(master\\|develop\\|integration\\|current-feature\\|production\\|staging\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | sed \"s/\\// :/\" | xargs -L1 git push && git cleanbr
+  cleanbradry = !git branch -r --no-color --merged | grep -v \"/\\(master\\|develop\\|integration\\|current-feature\\|production\\|staging\\)$\" | grep -v `git rev-parse --abbrev-ref HEAD` | sed \"s/\\// :/\" | xargs -L1 echo
   di = diff
   dc = diff --cached
   amend = commit --amend
