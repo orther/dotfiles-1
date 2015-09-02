@@ -26,7 +26,8 @@ git_remote_status_count() {
 
 PROMPT='%{$fg[blue]%}[%{$reset_color%}'
 PROMPT+='%~'
-PROMPT+='$(git_prompt_info)$(git_remote_status_count)'
+# PROMPT+='$(git_prompt_info)$(git_remote_status_count)'
+PROMPT+="\$(git-radar --zsh --fetch) "
 PROMPT+='%{$fg[blue]%}]%{$reset_color%}
 \$ '
 
