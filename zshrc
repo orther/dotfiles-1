@@ -39,3 +39,5 @@ source "${HOME}/.shellrc"
 eval "$(direnv hook zsh)"
 
 fpath=("$HOME/.zsh" $fpath)
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
