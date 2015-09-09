@@ -114,3 +114,7 @@ function pause_guard {
 function unpause_guard {
   ps ax | grep -w "bin/[g]uard" | awk '{print $1}' | xargs kill -USR2
 }
+
+function name_tab() {
+  echo -ne "\033]0;$1\007"
+}

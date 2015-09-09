@@ -17,9 +17,6 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM=verbose
 PS1="${COLOR_RED}[${COLOR_WHITE}\t ${COLOR_NONE}\W${COLOR_GREEN}\$(__git_ps1 ' (%s)')${COLOR_RED}]${COLOR_NONE}\$ "
 #export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-function name_tab() {
-  echo -ne "\033]0;$1\007"
-}
 
 # Erase duplicates in history
 export HISTCONTROL=erasedups
