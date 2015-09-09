@@ -47,6 +47,7 @@ brew install wget
 brew install zsh
 
 brew install macvim --with-cscope --with-luajit
+brew install michaeldfallen/formula/git-radar
 
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 brew cask install alfred
