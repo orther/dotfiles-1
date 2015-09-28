@@ -86,6 +86,12 @@
 [core]
   excludesfile = /Users/aaronjensen/.gitignore_global
   autocrlf = input
+  pager = bash -c '. ~/.bash/aliases && diff-highlight | strip_diff_leading_symbols | less -r' -
+[color "diff-highlight"]
+ oldNormal = "red bold"
+ oldHighlight = "red bold 52"
+ newNormal = "green bold"
+ newHighlight = "green bold 22"
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path = 
@@ -97,16 +103,16 @@
 [browser "ff"]
   cmd = open -a Firefox.app
 [pull]
-	rebase = preserve
+  rebase = preserve
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [status]
-	showUntrackedFiles = all
+  showUntrackedFiles = all
 [rebase]
-	autosquash = true
+  autosquash = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
