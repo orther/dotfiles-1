@@ -87,6 +87,11 @@
   excludesfile = /Users/aaronjensen/.gitignore_global
   autocrlf = input
   pager = bash -c '. ~/.bash/aliases && diff-highlight | strip_diff_leading_symbols | less -r' -
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "diff-highlight"]
  oldNormal = "red bold"
  oldHighlight = "red bold 52"
