@@ -19,6 +19,7 @@ brew install fasd
 brew install gist
 brew install git
 brew install git-flow
+brew install gnu-sed
 brew install graphviz
 brew install hub
 brew install imagemagick
