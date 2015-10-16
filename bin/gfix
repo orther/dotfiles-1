@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
+SHA=$(git r | pick | cut -d ' ' -f 2 | sed "s,$(printf '\033')\\[[0-9;]*[a-zA-Z],,g")
+git commit --fixup $SHA
+git rebase --interactive --autosquash $SHA\^
