@@ -23,12 +23,11 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; better-defaults
+     better-defaults
      emacs-lisp
      markdown
      syntax-checking
      auto-completion
-     company-mode
      erlang
      elixir
      git
@@ -36,10 +35,10 @@ values."
      html
      org
      colors
-     editorconfig
      themes-megapack
      perspectives
      osx
+     vinegar
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -97,7 +96,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -205,6 +204,7 @@ user code."
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+  (global-evil-mc-mode)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
