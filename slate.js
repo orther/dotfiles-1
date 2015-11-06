@@ -15,6 +15,7 @@ function bindAll() {
     "c:hyper" : "Google Chrome",
     "f:hyper" : "Firefox",
     "i:hyper" : "iTerm",
+    "j:hyper" : "Emacs",
     "k:hyper" : "Skype",
     "l:hyper" : "Flowdock",
     "m:hyper" : "Messages",
