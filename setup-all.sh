@@ -9,6 +9,12 @@ cd "$(dirname "$0")"
   git clone git://github.com/aaronjensen/vimfiles.git ~/.vim \
 ) && ~/.vim/setup.sh )
 
+[[ -d ~/.emacs.d ]] || ( \
+  echo Installing spacemacs && \
+  git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d && \
+  cd ~/.emacs.d && \
+  git checkout --track -B develop origin/develop)
+
 # Install Homebrew
 command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
