@@ -32,3 +32,4 @@ slurper_config.yml
 /tags
 *.pyc
 .envrc
+.tern-port
