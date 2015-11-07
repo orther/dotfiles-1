@@ -216,7 +216,7 @@ layers configuration. You are free to put any user code."
   (define-key key-translation-map "\C-j" "\C-x")
 
   (setq-default
-   ;; js2-mode
+   ;; js2-mod e
    js2-basic-offset 2
    js2-strict-trailing-comma-warning nil
    web-mode-markup-indent-offset 2
@@ -228,6 +228,8 @@ layers configuration. You are free to put any user code."
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
+
+  (add-hook 'js2-mode-hook '(lambda () (react-mode)))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
