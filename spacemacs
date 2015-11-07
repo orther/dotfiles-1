@@ -161,7 +161,7 @@ values."
    dotspacemacs-fullscreen-at-startup nil
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX. (default nil)
-   dotspacemacs-fullscreen-use-non-native nil
+   dotspacemacs-fullscreen-use-non-native t
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
@@ -229,7 +229,7 @@ layers configuration. You are free to put any user code."
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
-  (add-hook 'js2-mode-hook '(lambda () (react-mode)))
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . react-mode))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
