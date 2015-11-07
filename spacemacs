@@ -214,6 +214,7 @@ layers configuration. You are free to put any user code."
 
   ;; Use C-j in place of C-x
   (define-key key-translation-map "\C-j" "\C-x")
+  (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
   (setq-default
    ;; js2-mod e
