@@ -36,7 +36,7 @@ values."
      org
      colors
      themes-megapack
-     perspectives
+     spacemacs-layouts
      osx
      vinegar
      github
