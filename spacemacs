@@ -212,6 +212,9 @@ user code."
 layers configuration. You are free to put any user code."
   (global-evil-mc-mode)
 
+  (load-file "~/.dotfiles/emacs/sgml-mode-patch.el")
+  (require 'sgml-mode)
+
   ;; Use C-j in place of C-x
   (define-key key-translation-map "\C-j" "\C-x")
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
