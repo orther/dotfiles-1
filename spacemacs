@@ -217,7 +217,7 @@ layers configuration. You are free to put any user code."
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
   (setq-default
-   ;; js2-mod e
+   ;; js2-mode
    js2-basic-offset 2
    js2-strict-trailing-comma-warning nil
    web-mode-markup-indent-offset 2
