@@ -218,6 +218,8 @@ layers configuration. You are free to put any user code."
 
   (setq-default
    ;; js2-mode
+   js2-mode-show-parse-errors nil
+   js2-mode-show-show-strict-warnings nil
    js2-basic-offset 2
    js2-strict-trailing-comma-warning nil
    web-mode-markup-indent-offset 2
@@ -231,6 +233,10 @@ layers configuration. You are free to put any user code."
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
   (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-jsx-mode))
+
+  (defun set-jsx-indentation ()
+    (setq-local sgml-basic-offset js2-basic-offset))
+  (add-hook 'js2-jsx-mode-hook #'set-jsx-indentation)
 
   ;; flycheck eslint
   (with-eval-after-load 'flycheck
