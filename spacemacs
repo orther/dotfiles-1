@@ -55,6 +55,7 @@ values."
    dotspacemacs-additional-packages
    '(
      multiple-cursors
+     dtrt-indent
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -220,6 +221,8 @@ layers configuration. You are free to put any user code."
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
   (setq-default
+   ;; Shell-script mode
+   sh-basic-offset 2
    ;; js2-mode
    js2-mode-show-parse-errors nil
    js2-mode-show-show-strict-warnings nil
@@ -228,7 +231,9 @@ layers configuration. You are free to put any user code."
    web-mode-markup-indent-offset 2
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
-   web-mode-attr-indent-offset 2)
+   web-mode-attr-indent-offset 2
+   ;; dtrt-indent-mode
+   dtrt-indent-mode t)
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
