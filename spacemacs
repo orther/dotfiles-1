@@ -42,6 +42,7 @@ values."
      github
      javascript
      react
+     deft
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -233,7 +234,10 @@ layers configuration. You are free to put any user code."
    web-mode-code-indent-offset 2
    web-mode-attr-indent-offset 2
    ;; dtrt-indent-mode
-   dtrt-indent-mode t)
+   dtrt-indent-mode t
+   ;; deft
+   deft-extensions '("org" "txt")
+   deft-directory "~/Dropbox (Substantial)/Notes")
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
