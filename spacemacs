@@ -35,7 +35,6 @@ values."
      html
      org
      colors
-     themes-megapack
      spacemacs-layouts
      osx
      vinegar
@@ -223,6 +222,8 @@ layers configuration. You are free to put any user code."
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
   (setq-default
+   ;; magit
+   magit-push-always-verify nil
    ;; Shell-script mode
    sh-basic-offset 2
    ;; js2-mode
