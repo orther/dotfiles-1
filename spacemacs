@@ -27,7 +27,9 @@ values."
      emacs-lisp
      markdown
      syntax-checking
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-return-key-behavior nil
+                      auto-completion-tab-key-behavior 'cycle)
      erlang
      elixir
      git
@@ -103,7 +105,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Inconsolata-g"
+   dotspacemacs-default-font '("Source Code Pro"
                                :size 14
                                :weight normal
                                :width normal
@@ -222,10 +224,18 @@ layers configuration. You are free to put any user code."
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
   (setq-default
+   ;; Miscelaneous
+   vc-follow-symlinks t
+   require-final-newline t
+
    ;; magit
    magit-push-always-verify nil
+   magit-revert-buffers 0.3
+   magit-popup-show-common-commands nil
+
    ;; Shell-script mode
    sh-basic-offset 2
+
    ;; js2-mode
    js2-mode-show-parse-errors nil
    js2-mode-show-show-strict-warnings nil
@@ -235,8 +245,10 @@ layers configuration. You are free to put any user code."
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
    web-mode-attr-indent-offset 2
+
    ;; dtrt-indent-mode
    dtrt-indent-mode t
+
    ;; deft
    deft-extensions '("org" "txt")
    deft-directory "~/Dropbox (Substantial)/Notes")
