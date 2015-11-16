@@ -217,8 +217,12 @@ user code."
 layers configuration. You are free to put any user code."
   (global-evil-mc-mode)
 
+  ;; Monkey patch to fix indentation for attributes in jsx
   (load-file "~/.dotfiles/emacs/sgml-mode-patch.el")
   (require 'sgml-mode)
+
+  ;; Set initial position
+  (setq initial-frame-alist '((top . 0) (left . 0) (width . 177) (height . 53)))
 
   ;; Use C-j in place of C-x
   (define-key key-translation-map "\C-j" "\C-x")
