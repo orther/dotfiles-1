@@ -265,6 +265,12 @@ layers configuration. You are free to put any user code."
     (setq-local sgml-basic-offset js2-basic-offset))
   (add-hook 'js2-jsx-mode-hook #'set-jsx-indentation)
 
+  (with-eval-after-load 'elixir-mode
+    (modify-syntax-entry ?_ "w" elixir-mode-syntax-table))
+
+  (with-eval-after-load 'ruby-mode
+    (modify-syntax-entry ?_ "w" ruby-mode-syntax-table))
+
   ;; flycheck eslint
   (with-eval-after-load 'flycheck
     (setq-default flycheck-disabled-checkers
