@@ -45,10 +45,10 @@ values."
      deft
      floobits
      ruby
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     spell-checking
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
