@@ -1,7 +1,6 @@
 #eval `hub alias -s bash`
 
 #set -o vi
-source ~/.shellrc
 
 export BASH_ENV='~/.bash/env'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
