@@ -269,7 +269,6 @@ layers configuration. You are free to put any user code."
   (define-key key-translation-map "\C-j" "\C-x")
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
-
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
@@ -286,6 +285,9 @@ layers configuration. You are free to put any user code."
 
   (with-eval-after-load 'ruby-mode
     (modify-syntax-entry ?_ "w" ruby-mode-syntax-table))
+
+  ;; Word wrap in text buffers
+  (add-hook 'text-mode-hook 'auto-fill-mode)
 
   ;; flycheck eslint
   (with-eval-after-load 'flycheck
