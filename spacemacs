@@ -13,6 +13,7 @@ values."
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
    dotspacemacs-configuration-layer-path '()
+
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
@@ -45,6 +46,8 @@ values."
      deft
      floobits
      ruby
+     semantic
+     unimpaired
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -91,7 +94,7 @@ values."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner nil
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'.
    ;; (default '(recents projects))
@@ -128,7 +131,7 @@ values."
    dotspacemacs-command-key ":"
    ;; If non nil `Y' is remapped to `y$'. (default t)
    dotspacemacs-remap-Y-to-y$ t
-   dotspacemacs-line-numbers t
+   dotspacemacs-line-numbers nil
    ;; Location where to auto-save files. Possible values are `original' to
    ;; auto-save the file in-place, `cache' to auto-save the file to another
    ;; file stored in the cache directory and `nil' to disable auto-saving.
@@ -217,18 +220,15 @@ user code."
 layers configuration. You are free to put any user code."
   (global-evil-mc-mode)
 
-  ;; Monkey patch to fix indentation for attributes in jsx
-  (load-file "~/.dotfiles/emacs/sgml-mode-patch.el")
-  (require 'sgml-mode)
-
   ;; Set initial position
-  (setq initial-frame-alist '((top . 0) (left . 0) (width . 177) (height . 53)))
-
-  ;; Use C-j in place of C-x
-  (define-key key-translation-map "\C-j" "\C-x")
-  (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
+  (setq
+   initial-frame-alist '((top . 0) (left . 0) (width . 177) (height . 53))
+   powerline-default-separator 'alternate)
 
   (setq-default
+   ;; Evil
+   evil-shift-round nil
+
    ;; Miscelaneous
    vc-follow-symlinks t
    require-final-newline t
@@ -256,7 +256,19 @@ layers configuration. You are free to put any user code."
 
    ;; deft
    deft-extensions '("org" "txt")
+   deft-org-mode-title-prefix t
+   deft-use-filename-as-title nil
+   deft-use-filter-string-for-filename t
    deft-directory "~/Dropbox (Substantial)/Notes")
+
+  ;; Monkey patch to fix indentation for attributes in jsx
+  (load-file "~/.dotfiles/emacs/sgml-mode-patch.el")
+  (require 'sgml-mode)
+
+  ;; Use C-j in place of C-x
+  (define-key key-translation-map "\C-j" "\C-x")
+  (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
+
 
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
