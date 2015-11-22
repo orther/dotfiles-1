@@ -289,6 +289,11 @@ layers configuration. You are free to put any user code."
   ;; Word wrap in text buffers
   (add-hook 'text-mode-hook 'auto-fill-mode)
 
+  ;; Magit
+  (with-eval-after-load 'magit
+    (evil-define-key 'motion magit-mode-map (kbd "C-n") 'magit-section-forward-sibling)
+    (evil-define-key 'motion magit-mode-map (kbd "C-p") 'magit-section-backward-sibling))
+
   ;; flycheck eslint
   (with-eval-after-load 'flycheck
     (setq-default flycheck-disabled-checkers
