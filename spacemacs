@@ -62,6 +62,7 @@ values."
    '(
      multiple-cursors
      dtrt-indent
+     company-flx
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -293,6 +294,11 @@ layers configuration. You are free to put any user code."
   (with-eval-after-load 'magit
     (evil-define-key 'motion magit-mode-map (kbd "C-n") 'magit-section-forward-sibling)
     (evil-define-key 'motion magit-mode-map (kbd "C-p") 'magit-section-backward-sibling))
+
+  ;; Company
+  ;; Fuzzy completion
+  (with-eval-after-load 'company
+    (company-flx-mode +1))
 
   ;; flycheck eslint
   (with-eval-after-load 'flycheck
