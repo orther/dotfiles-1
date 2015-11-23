@@ -7,9 +7,9 @@
 #   -sender com.getharvest.harvestx
 
 # Stop first because resume isn't idempotent
-/usr/bin/hcl stop
+/usr/local/bin/hcl stop
 
-(/usr/bin/hcl resume $2 $3 || /usr/bin/hcl start $2 $3) | \
+(/usr/local/bin/hcl resume $2 $3 || /usr/local/bin/hcl start $2 $3) | \
   /usr/local/opt/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier \
   -title "Started" \
   -group "harvest" \
