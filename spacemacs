@@ -52,6 +52,7 @@ values."
             shell-default-height 30
             shell-default-position 'bottom)
      spell-checking
+     ranger
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
