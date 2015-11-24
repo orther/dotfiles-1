@@ -22,6 +22,7 @@ if ! zgen saved; then
 fi
 
 compdef g='git'
+unalias g
 
 source "${HOME}/.zsh/aaronjensen.zsh-theme"
 
