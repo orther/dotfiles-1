@@ -271,20 +271,37 @@ layers configuration. You are free to put any user code."
   (define-key key-translation-map "\C-j" "\C-x")
   (global-set-key (kbd "<s-return>") 'spacemacs/toggle-fullscreen-frame)
 
+  ;; HTML
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
+  ;; Javascript
   (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-jsx-mode))
 
   (defun set-jsx-indentation ()
     (setq-local sgml-basic-offset js2-basic-offset))
   (add-hook 'js2-jsx-mode-hook #'set-jsx-indentation)
 
+  ;; flycheck eslint
+  (with-eval-after-load 'flycheck
+    (setq-default flycheck-disabled-checkers
+                  (append flycheck-disabled-checkers
+                          '(javascript-jshint)))
+
+    (flycheck-add-mode 'javascript-eslint 'web-mode)
+
+    (setq-default flycheck-disabled-checkers
+                  (append flycheck-disabled-checkers
+                          '(json-jsonlist))))
+  ;; Elixir
+  ;; Treat _ as a word character
   (with-eval-after-load 'elixir-mode
     (modify-syntax-entry ?_ "w" elixir-mode-syntax-table))
 
+  ;; Ruby
+  ;; Treat _ as a word character
   (with-eval-after-load 'ruby-mode
     (modify-syntax-entry ?_ "w" ruby-mode-syntax-table))
 
@@ -299,19 +316,7 @@ layers configuration. You are free to put any user code."
   ;; Company
   ;; Fuzzy completion
   (with-eval-after-load 'company
-    (company-flx-mode +1))
-
-  ;; flycheck eslint
-  (with-eval-after-load 'flycheck
-    (setq-default flycheck-disabled-checkers
-                  (append flycheck-disabled-checkers
-                          '(javascript-jshint)))
-
-    (flycheck-add-mode 'javascript-eslint 'web-mode)
-
-    (setq-default flycheck-disabled-checkers
-                  (append flycheck-disabled-checkers
-                          '(json-jsonlist)))))
+    (company-flx-mode +1)))
 
 
 ;; Do not write anything past this comment. This is where Emacs will
