@@ -47,6 +47,7 @@ brew install wemux
 brew install wget
 brew install zsh
 
+brew tap railwaycat/emacsmacport
 brew install emacs-mac --with-spacemacs-icon
 brew install macvim --with-cscope --with-luajit
 brew install michaeldfallen/formula/git-radar
