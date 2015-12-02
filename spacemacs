@@ -309,12 +309,22 @@ layers configuration. You are free to put any user code."
   (add-hook 'text-mode-hook 'auto-fill-mode)
 
   ;; Magit
+  ;; Use C-n/C-p to navigate sections
   (with-eval-after-load 'magit
     (evil-define-key 'motion magit-mode-map (kbd "C-n") 'magit-section-forward-sibling)
     (evil-define-key 'motion magit-mode-map (kbd "C-p") 'magit-section-backward-sibling))
 
   ;; Start in insert mode
   (add-hook 'git-commit-mode-hook 'evil-insert-state)
+
+  ;; Smartparens
+  (setq-default
+   sp-highlight-pair-overlay nil
+   sp-highlight-wrap-overlay nil
+   sp-highlight-wrap-tag-overlay nil)
+  ;; Disable smartparens highlighting
+  (with-eval-after-load 'smartparens
+    (show-smartparens-global-mode -1))
 
   ;; Company
   ;; Fuzzy completion
