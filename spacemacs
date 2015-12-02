@@ -313,6 +313,9 @@ layers configuration. You are free to put any user code."
     (evil-define-key 'motion magit-mode-map (kbd "C-n") 'magit-section-forward-sibling)
     (evil-define-key 'motion magit-mode-map (kbd "C-p") 'magit-section-backward-sibling))
 
+  ;; Start in insert mode
+  (add-hook 'git-commit-mode-hook 'evil-insert-state)
+
   ;; Company
   ;; Fuzzy completion
   (with-eval-after-load 'company
