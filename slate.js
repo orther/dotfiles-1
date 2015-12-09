@@ -21,7 +21,7 @@ function bindAll() {
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
     "v:hyper" : "nvALT",
-    "x:hyper" : "Mailbox (Beta)",
+    "x:hyper" : "Polymail",
     "z:hyper" : "Slack"
   });
 
