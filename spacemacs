@@ -326,6 +326,13 @@ layers configuration. You are free to put any user code."
   (with-eval-after-load 'smartparens
     (show-smartparens-global-mode -1))
 
+  ;; Org mode
+  (with-eval-after-load 'org
+    (define-key org-mode-map (kbd "M-h") 'org-metaleft)
+    (define-key org-mode-map (kbd "M-j") 'org-metaup)
+    (define-key org-mode-map (kbd "M-k") 'org-metadown)
+    (define-key org-mode-map (kbd "M-l") 'org-metaright))
+
   ;; Company
   ;; Fuzzy completion
   (with-eval-after-load 'company
