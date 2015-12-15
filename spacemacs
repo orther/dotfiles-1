@@ -231,7 +231,11 @@ layers configuration. You are free to put any user code."
    ;; Evil
    evil-shift-round nil
 
-   ;; Miscelaneous
+   ;; File name completion
+   read-file-name-completion-ignore-case t
+   read-buffer-completion-ignore-case t
+
+   ;; Miscellaneous
    vc-follow-symlinks t
    require-final-newline t
 
