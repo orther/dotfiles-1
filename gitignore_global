@@ -33,3 +33,5 @@ slurper_config.yml
 *.pyc
 .envrc
 .tern-port
+.floo
+.flooignore
