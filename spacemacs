@@ -27,9 +27,7 @@ values."
      emacs-lisp
      markdown
      syntax-checking
-     (auto-completion :variables
-                      auto-completion-return-key-behavior nil
-                      auto-completion-tab-key-behavior 'cycle)
+     auto-completion
      erlang
      elixir
      git
@@ -51,7 +49,8 @@ values."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
+     (spell-checking :variables
+                     spell-checking-enable-by-default nil)
      ranger
      ;; version-control
      )
