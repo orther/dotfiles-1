@@ -343,7 +343,10 @@ layers configuration. You are free to put any user code."
   ;; Company
   ;; Fuzzy completion
   (with-eval-after-load 'company
-    (company-flx-mode +1)))
+    (company-flx-mode +1))
+  (setq-default company-backends-js2-mode '((company-tern :with company-dabbrev)
+                                            company-files
+                                            company-dabbrev)))
 
 
 ;; Do not write anything past this comment. This is where Emacs will
