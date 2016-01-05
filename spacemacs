@@ -253,7 +253,6 @@ layers configuration. You are free to put any user code."
    magit-push-always-verify nil
    magit-revert-buffers nil
    magit-popup-show-common-commands nil
-   global-auto-revert-mode t
 
    ;; Shell-script mode
    sh-basic-offset 2
