@@ -75,7 +75,6 @@ brew cask install p4merge
 brew cask install screenhero
 brew cask install silverlight
 brew cask install skype
-brew cask install steermouse
 brew cask install vlc
 
 brew cask alfred link
