@@ -41,3 +41,9 @@ eval "$(direnv hook zsh)"
 fpath=("$HOME/.zsh" $fpath)
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+if [ $ITERM_PROFILE ]; then
+  echo -ne "\033]6;1;bg;red;brightness;28\a"
+  echo -ne "\033]6;1;bg;blue;brightness;28\a"
+  echo -ne "\033]6;1;bg;green;brightness;28\a"
+fi
