@@ -15,6 +15,11 @@ cd "$(dirname "$0")"
   cd ~/.emacs.d && \
   git checkout --track -B develop origin/develop)
 
+# Install my spacemacs files
+[[ -d ~/.spacemacs.d ]] || ( \
+  git clone git@github.com:aaronjensen/spacemacs.d.git ~/.spacemacs.d
+)
+
 # Install Homebrew
 command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
