@@ -17,7 +17,8 @@ cd "$(dirname "$0")"
 
 # Install my spacemacs files
 [[ -d ~/.spacemacs.d ]] || ( \
-  git clone git@github.com:aaronjensen/spacemacs.d.git ~/.spacemacs.d
+  git clone git@github.com:aaronjensen/spacemacs.d.git ~/.spacemacs.d \
+      && ~/.spacemacs.d/setup.sh \
 )
 
 # Install Homebrew
