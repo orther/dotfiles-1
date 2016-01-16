@@ -238,6 +238,9 @@ layers configuration. You are free to put any user code."
    powerline-default-separator 'alternate)
 
   (setq-default
+   ;; Enable sudo:server:
+   tramp-default-proxies-alist (quote ((".*" "\\`root\\'" "/ssh:%h:")))
+
    ;; Evil
    evil-shift-round nil
 
