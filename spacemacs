@@ -241,6 +241,9 @@ layers configuration. You are free to put any user code."
    ;; Enable sudo:server:
    tramp-default-proxies-alist (quote ((".*" "\\`root\\'" "/ssh:%h:")))
 
+   ;; Spaceline
+   spaceline-minor-modes-p nil
+
    ;; Evil
    evil-shift-round nil
 
