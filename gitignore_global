@@ -35,3 +35,4 @@ slurper_config.yml
 .tern-port
 .floo
 .flooignore
+.#*
