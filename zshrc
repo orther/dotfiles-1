@@ -14,6 +14,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/rvm
   zgen oh-my-zsh plugins/nvm
   zgen load zsh-users/zsh-syntax-highlighting
+  zgen load rimraf/k
 
   # completions
   zgen load zsh-users/zsh-completions src
