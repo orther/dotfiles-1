@@ -1,3 +1,7 @@
 #!/bin/sh
 
-emacsclient --no-wait $*
+emacsclient --no-wait $* || (
+  emacs &
+  sleep 5
+  emacsclient --no-wait $*
+)
