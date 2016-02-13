@@ -22,6 +22,7 @@ brew install git-flow
 brew install gnu-sed
 brew install graphviz
 brew install hub
+brew install htop
 brew install imagemagick
 brew install jpeg
 brew install libevent
