@@ -109,8 +109,6 @@
   cmd = open -a Firefox.app
 [pull]
   rebase = preserve
-[branch]
-  autosetuprebase = always
 [credential]
   helper = osxkeychain
 [status]
