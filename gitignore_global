@@ -36,3 +36,4 @@ slurper_config.yml
 .floo
 .flooignore
 .#*
+.mix_tasks
