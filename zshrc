@@ -16,6 +16,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/nvm
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-autosuggestions
+  zgen load zsh-users/zsh-history-substring-search
   zgen load rimraf/k
 
   # completions
@@ -23,6 +24,11 @@ if ! zgen saved; then
 
   zgen save
 fi
+
+# zsh-history-substring-search
+# bind P and N for EMACS mode
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
 
 compdef g='git'
 source ~/.bash/aliases
