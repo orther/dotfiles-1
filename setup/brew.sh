@@ -21,10 +21,11 @@ brew install git
 brew install git-flow
 brew install gnu-sed
 brew install graphviz
-brew install hub
 brew install htop
+brew install hub
 brew install imagemagick
 brew install jpeg
+brew install libdvdcss
 brew install libevent
 brew install libtiff
 brew install memcached
