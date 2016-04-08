@@ -21,7 +21,7 @@ function bindAll() {
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
     "v:hyper" : "nvALT",
-    "x:hyper" : "Polymail",
+    "x:hyper" : ["App Launcher for Inbox by Gmail App", "/Users/aaronjensen/Applications/Chrome\ Apps.localized/Default\ ajjmenfgmbpceneffopmikhahnkeebje.app"],
     "z:hyper" : "Slack"
   });
 
@@ -152,7 +152,13 @@ function bindWindowSizes(bindings) {
 
 function bindQuickSwitch(bindings) {
   _.each(bindings, function(app, key) {
-    var appPath = "'/Applications/" + app + ".app'"
+    var appPath;
+    if (typeof app === "string") {
+      appPath = "'/Applications/" + app + ".app'"
+    } else {
+      appPath = app[1]
+      app = app[0]
+    }
     key = expandModifiers(key);
 
     S.bind(key, function() {
