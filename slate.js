@@ -21,7 +21,7 @@ function bindAll() {
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
     "v:hyper" : "nvALT",
-    "x:hyper" : "Polymail",
+    "x:hyper" : ["App Launcher for Inbox by Gmail App", "/Users/aaronjensen/Applications/Chrome\ Apps.localized/Default\ ajjmenfgmbpceneffopmikhahnkeebje.app"],
     "z:hyper" : "Slack"
   });
 
