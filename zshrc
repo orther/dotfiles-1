@@ -25,6 +25,10 @@ if ! zgen saved; then
   zgen save
 fi
 
+# This is supposed to speed up pasting but doesn't appear to help much
+# https://github.com/zsh-users/zsh-autosuggestions/issues/141#issuecomment-210615799
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
 # zsh-history-substring-search
 # bind P and N for EMACS mode
 bindkey -M emacs '^P' history-substring-search-up
