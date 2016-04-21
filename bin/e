@@ -1,7 +1,0 @@
-#!/bin/sh
-
-emacsclient --tty $* || (
-  emacs &
-  sleep 5
-  emacsclient --tty $*
-)

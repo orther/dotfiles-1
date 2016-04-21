@@ -13,6 +13,8 @@ alias df='df -kTh'
 alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 
+alias e='emacsclient --tty -a ""'
+alias eg='emacsclient --no-wait -a ""'
 alias vim='mvim -v'
 
 alias r='`[ -e bin/r ] && echo bin/r || [ -e bin/rails ] && echo bin/rails || echo rails`'
