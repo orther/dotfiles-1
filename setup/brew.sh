@@ -10,11 +10,9 @@ brew install autojump
 brew install automake
 brew install bash
 brew install bash-completion
-brew install boot2docker
 brew install brew-cask
 brew install ctags
 brew install direnv
-brew install docker
 brew install fasd
 brew install gist
 brew install git

@@ -35,8 +35,5 @@ export BUNDLER_EDITOR='/usr/local/bin/mvim -v'
 # Projects
 export TCH_BUNDLE_INSTALL=bundle
 
-# Docker
-export DOCKER_HOST=tcp://localhost:4243
-
 # Android
 export ANDROID_HOME=/usr/local/opt/android-sdk

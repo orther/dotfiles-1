@@ -31,7 +31,6 @@ shopt -s globstar
 # Free up ^S for i-search
 stty stop undef
 
-\which boot2docker > /dev/null && $(boot2docker shellinit 2>/dev/null)
 [[ -s "$HOME/.bash_private" ]] && source "$HOME/.bash_private"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 eval "$(direnv hook bash)"
