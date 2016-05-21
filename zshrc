@@ -60,3 +60,5 @@ if [ $ITERM_PROFILE ]; then
   echo -ne "\033]6;1;bg;blue;brightness;28\a"
   echo -ne "\033]6;1;bg;green;brightness;28\a"
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
