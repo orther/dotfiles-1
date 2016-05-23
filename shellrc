@@ -37,3 +37,8 @@ export TCH_BUNDLE_INSTALL=bundle
 
 # Android
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# fzf
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_OPTS='--reverse --inline-info -d 15'
+export FZF_TMUX_HEIGHT=20

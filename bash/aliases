@@ -46,7 +46,7 @@ alias gg='git l $(current_tracking_branch)^...'
 alias pbgist='gist -p -P | pbcopy'
 alias filecount='find . | cut -d/ -f2 | sort | uniq -c | sort -bn'
 
-alias gco='git checkout $(git branch -a | cut -c 3- | sed '"'"'s/^remotes\/[^/]*\///'"'"' | sort | uniq | grep -v HEAD | pick)'
+alias gco='git checkout $(git branch -a | cut -c 3- | sed '"'"'s/^remotes\/[^/]*\///'"'"' | sort | uniq | grep -v HEAD | fzf-tmux -d 20)'
 
 alias fig='LEIN_FAST_TRAMPOLINE=y rlwrap lein trampoline figwheel'
 alias nrepl='LEIN_FAST_TRAMPOLINE=y lein trampoline repl'
