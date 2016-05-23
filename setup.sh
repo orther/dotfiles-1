@@ -1,5 +1,9 @@
 #!/bin/sh
 
+[[ -d ~/.tmux/plugins/tpm ]] || ( \
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
+)
+
 cd `dirname $0`
 F=`pwd |sed -e "s#$HOME/\?##"`
 
