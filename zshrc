@@ -34,6 +34,19 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 
+# Use C-z to switch back to fg
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+      BUFFER="fg"
+      zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
 compdef g='git'
 source ~/.bash/aliases
 
