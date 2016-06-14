@@ -75,3 +75,4 @@ if [ $ITERM_PROFILE ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
