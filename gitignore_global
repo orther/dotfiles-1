@@ -38,3 +38,4 @@ slurper_config.yml
 .#*
 .mix_tasks
 .projectile
+.tool-versions
