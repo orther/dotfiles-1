@@ -72,7 +72,6 @@ brew cask install iterm2
 brew cask install karabiner
 brew cask install lastpass-universal
 brew cask install mattr-slate
-brew cask install nvalt
 brew cask install p4merge
 brew cask install screenhero
 brew cask install silverlight
