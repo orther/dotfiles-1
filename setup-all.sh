@@ -21,6 +21,18 @@ cd "$(dirname "$0")"
       && ~/.spacemacs.d/setup.sh \
 )
 
+[[ -d ~/.asdf ]] || ( \
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf \
+)
+
+[[ -d ~/.asdf/plugins/elixir ]] || ( \
+  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git \
+)
+
+[[ -d ~/.asdf/plugins/erlang ]] || ( \
+  asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git \
+)
+
 # Install Homebrew
 command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
