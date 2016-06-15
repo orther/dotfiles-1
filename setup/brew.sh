@@ -47,7 +47,7 @@ brew install wget
 brew install zsh
 
 # brew tap railwaycat/emacsmacport
-brew install emacs --with-cocoa --with-librsvg --with-gnutls --with-imagemagick
+brew install emacs --with-cocoa --with-librsvg --with-gnutls --with-imagemagick --devel
 tic -o ~/.terminfo /usr/local/Cellar/emacs/24.5/share/emacs/24.5/etc/e/eterm-color.ti
 
 # brew install emacs-mac --with-spacemacs-icon
