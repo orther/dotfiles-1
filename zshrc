@@ -31,6 +31,14 @@ fi
 # https://github.com/zsh-users/zsh-autosuggestions/issues/141#issuecomment-210615799
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+
 # zsh-history-substring-search
 # bind P and N for EMACS mode
 bindkey -M emacs '^P' history-substring-search-up
