@@ -14,6 +14,8 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/ruby
   zgen oh-my-zsh plugins/rvm
   zgen oh-my-zsh plugins/nvm
+  zgen oh-my-zsh plugins/docker
+  zgen oh-my-zsh plugins/docker-compose
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-autosuggestions
   zgen load zsh-users/zsh-history-substring-search
