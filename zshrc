@@ -84,5 +84,6 @@ if [ $ITERM_PROFILE ]; then
   echo -ne "\033]6;1;bg;green;brightness;28\a"
 fi
 
+command -v dinghy > /dev/null && eval $(dinghy env)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
