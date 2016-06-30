@@ -22,7 +22,7 @@ function bindAll() {
     "s:hyper" : "Safari",
     "v:hyper" : "nvALT",
     // "x:hyper" : ["App Launcher for Inbox by Gmail App", "/Users/aaronjensen/Applications/Chrome\ Apps.localized/Default\ ajjmenfgmbpceneffopmikhahnkeebje.app"],
-    "x:hyper" : "Polymail",
+    "x:hyper" : "Canary",
     "z:hyper" : "Slack"
   });
 
