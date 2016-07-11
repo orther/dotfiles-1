@@ -40,6 +40,7 @@ brew install terminal-notifier
 brew install the_silver_searcher
 brew install tig
 brew install tmux
+brew install trash
 brew install tree
 brew install urlview
 brew install wemux
