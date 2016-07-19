@@ -14,6 +14,7 @@ function bindAll() {
     "a:hyper" : "Atom",
     "c:hyper" : "Google Chrome",
     "f:hyper" : "Firefox",
+    "g:hyper" : ["HighfiveApp", "/Users/aaronjensen/Applications/HighfiveApp.app"],
     "i:hyper" : "iTerm",
     "j:hyper" : "Emacs",
     "k:hyper" : "Skype",
