@@ -237,10 +237,10 @@
     <appendix>OS X doesn't have a Hyper. This maps right control to Control + Shift + Option + Command.</appendix>
 
     <identifier>aaronjensen.semicolon_to_hyper</identifier>
-    <device_only>
+    <device_not>
       DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
       DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
-    </device_only>
+    </device_not>
 
     <autogen>
       __KeyOverlaidModifier__
