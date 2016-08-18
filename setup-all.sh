@@ -41,9 +41,6 @@ command -v brew > /dev/null || ruby -e "$(curl -fsSL https://raw.githubuserconte
 ./setup/import-defaults.sh
 ./setup/upgrade-bash.sh
 
-# Install RVM
-command -v rvm > /dev/null || \curl -sSL https://get.rvm.io | bash
-
 # Start mysql at boot
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
@@ -56,5 +53,5 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 curl get.pow.cx | sh
 
 # Install hcl for harvest
-echo Installing hcl for harvest, will need sudo...
-rvmsudo rvm system do gem install hcl
+# echo Installing hcl for harvest, will need sudo...
+# rvmsudo rvm system do gem install hcl

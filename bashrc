@@ -32,7 +32,6 @@ shopt -s globstar
 stty stop undef
 
 [[ -s "$HOME/.bash_private" ]] && source "$HOME/.bash_private"
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 eval "$(direnv hook bash)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
