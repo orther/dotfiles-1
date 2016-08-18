@@ -10,6 +10,16 @@
     <productid>0x0007</productid>
   </deviceproductdef>
 
+  <devicevendordef>
+    <vendorname>KINESIS2</vendorname>
+    <vendorid>0x29ea</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>ADVANTAGE2</productname>
+    <productid>0x0102</productid>
+  </deviceproductdef>
+
   <modifierdef>MY_SYMBOLS</modifierdef>
 
   <item>
@@ -18,7 +28,10 @@
     <item>
       <name>Hold esc for control</name>
       <identifier>aaronjensen.kinesis.esc_ctrl</identifier>
-      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+      <device_only>
+        DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+      </device_only>
 
       <!-- Hold esc for ctrl -->
       <autogen>
@@ -34,7 +47,10 @@
     <item>
       <name>COMMAND_R -> Hyper (Cmd+Shift+Ctrl+Opt)</name>
       <identifier>aaronjensen.kinesis.hyper</identifier>
-      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+      <device_only>
+        DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+      </device_only>
 
       <!-- Hyper -->
       <autogen>
@@ -48,7 +64,10 @@
     <item>
       <name>DANISH_DOLLAR -> Super (Cmd+Ctrl+Opt)</name>
       <identifier>aaronjensen.kinesis.super</identifier>
-      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+      <device_only>
+        DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+      </device_only>
 
       <!-- Super -->
       <autogen>
@@ -62,7 +81,10 @@
     <item>
       <name>Symbol Overlay</name>
       <identifier>aaronjensen.kinesis.symbol_overlay</identifier>
-      <device_only>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+      <device_only>
+        DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+      </device_only>
       <appendix>Hold down esc to change keys to:</appendix>
       <appendix>!@#$%^&amp;*-+</appendix>
       <appendix>a[{(=_)}];</appendix>
@@ -215,7 +237,10 @@
     <appendix>OS X doesn't have a Hyper. This maps right control to Control + Shift + Option + Command.</appendix>
 
     <identifier>aaronjensen.semicolon_to_hyper</identifier>
-    <device_not>DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE</device_only>
+    <device_only>
+      DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
+      DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+    </device_only>
 
     <autogen>
       __KeyOverlaidModifier__
