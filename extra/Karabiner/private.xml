@@ -20,6 +20,12 @@
     <productid>0x0102</productid>
   </deviceproductdef>
 
+  <!-- advantage 2 w/ vdrive activated -->
+  <deviceproductdef>
+    <productname>ADVANTAGE2V</productname>
+    <productid>0x0103</productid>
+  </deviceproductdef>
+
   <modifierdef>MY_SYMBOLS</modifierdef>
 
   <item>
@@ -30,7 +36,8 @@
       <identifier>aaronjensen.kinesis.esc_ctrl</identifier>
       <device_only>
         DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
-        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2V
       </device_only>
 
       <!-- Hold esc for ctrl -->
@@ -49,7 +56,8 @@
       <identifier>aaronjensen.kinesis.hyper</identifier>
       <device_only>
         DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
-        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2V
       </device_only>
 
       <!-- Hyper -->
@@ -66,7 +74,8 @@
       <identifier>aaronjensen.kinesis.super</identifier>
       <device_only>
         DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
-        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2V
       </device_only>
 
       <!-- Super -->
@@ -83,7 +92,8 @@
       <identifier>aaronjensen.kinesis.symbol_overlay</identifier>
       <device_only>
         DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
-        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2,
+        DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2V
       </device_only>
       <appendix>Hold down esc to change keys to:</appendix>
       <appendix>!@#$%^&amp;*-+</appendix>
@@ -239,7 +249,8 @@
     <identifier>aaronjensen.semicolon_to_hyper</identifier>
     <device_not>
       DeviceVendor::KINESIS, DeviceProduct::ADVANTAGE,
-      DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2
+      DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2,
+      DeviceVendor::KINESIS2, DeviceProduct::ADVANTAGE2V
     </device_not>
 
     <autogen>
