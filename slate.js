@@ -18,13 +18,13 @@ function bindAll() {
     "i:hyper" : "iTerm",
     "j:hyper" : "Emacs",
     "k:hyper" : "Skype",
-    "l:hyper" : "Flowdock",
+    "l:hyper" : "Slack",
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
     "v:hyper" : "nvALT",
     // "x:hyper" : ["App Launcher for Inbox by Gmail App", "/Users/aaronjensen/Applications/Chrome\ Apps.localized/Default\ ajjmenfgmbpceneffopmikhahnkeebje.app"],
     "x:hyper" : "Boxy",
-    "z:hyper" : "Slack"
+    "z:hyper" : "Zeplin"
   });
 
   /*
