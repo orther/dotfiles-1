@@ -40,3 +40,4 @@ slurper_config.yml
 .projectile
 .tool-versions
 .tool-versions-e
+.vscode
