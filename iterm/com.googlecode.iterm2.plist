@@ -1366,13 +1366,15 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1080 1087 400 129 0 0 2560 1577 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 889 620 392 0 0 2560 1577 </string>
+	<string>930 734 700 622 0 0 2560 1600 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>1387 761 1018 447 0 0 2560 1577 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 17 1490 1560 0 0 2560 1577 </string>
+	<string>0 0 2560 1600 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 1046 650 531 0 0 2560 1577 </string>
+	<string>0 0 2560 1600 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 1033 650 531 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2851,6 +2853,10 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>E81F71AA-A546-4D55-9A81-7C89954E377D</string>
 	<key>NoSyncLastTipTime</key>
@@ -2870,7 +2876,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453503703.84811503</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>463159257.53155798</real>
+	<real>487660689.96528703</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -2944,6 +2950,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/aaronjensen/.dotfiles/iterm</string>
+	<key>PromptForPasteWhenNotAtPrompt</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<false/>
 	<key>PromptOnQuit</key>
@@ -2961,11 +2969,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=53</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=53</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-23T00:21:15Z</date>
+	<date>2016-11-02T05:06:01Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3043,6 +3051,10 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160510</string>
+	<string>3.0.11</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
