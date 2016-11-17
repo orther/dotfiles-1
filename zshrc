@@ -83,5 +83,3 @@ if [ $ITERM_PROFILE ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-command -v yarn > /dev/null && export PATH="`yarn global bin`:$PATH"
