@@ -25,9 +25,8 @@ if ! zgen saved; then
   zgen save
 fi
 
-# This is supposed to speed up pasting but doesn't appear to help much
-# https://github.com/zsh-users/zsh-autosuggestions/issues/141#issuecomment-210615799
-zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+# This speeds up pasting w/ autosuggest
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=5
 
 setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
