@@ -7,7 +7,6 @@ if ! zgen saved; then
   zgen oh-my-zsh
 
   # plugins
-  zgen oh-my-zsh plugins/autojump
   zgen oh-my-zsh plugins/git
   zgen oh-my-zsh plugins/lein
   zgen oh-my-zsh plugins/mix-fast
@@ -18,6 +17,10 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-autosuggestions
   zgen load zsh-users/zsh-history-substring-search
   zgen load rimraf/k
+  # Like autojump, but with manual marks.
+  # Run `mark <name>` to mark, and C-g to jump to a mark.
+  # `dmark` to remove a mark.
+  zgen load uvaes/fzf-marks
 
   # completions
   zgen load zsh-users/zsh-completions src
