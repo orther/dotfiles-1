@@ -29,7 +29,7 @@ if ! zgen saved; then
 fi
 
 # This speeds up pasting w/ autosuggest
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=5
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=15
 
 setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
