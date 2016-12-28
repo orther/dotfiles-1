@@ -55,6 +55,7 @@
   branches = "!for branch in `git branch -r | grep -v HEAD`;do git show --format=\"%ai  %<(15)%ar%<(17)%C(red)%an%C(reset) %C(yellow)$branch%C(reset)\" $branch | head -n 1; done | sort -r"
   oldest-ancestor = !zsh -c 'diff --old-line-format= --new-line-format= <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1' -
   x-lead-time = !sh -c 'echo $(( ($(git show -s --format=%ct $1) - $(git show -s --format=%ct $(git oldest-ancestor $1^2))) / 60 / 60 ))' -
+  no-push = remote set-url --push origin no_push
 
 [format]
   pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
