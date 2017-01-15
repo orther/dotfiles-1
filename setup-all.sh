@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 cd "$(dirname "$0")"
+F=`pwd |sed -e "s#$HOME/\?##"`
 
 ./setup.sh
 
@@ -48,6 +49,9 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 # Start postgresql at boot
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+# Add DefaultKeyBindings
+ln -sfv $F/extra/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 # Install pow
 curl get.pow.cx | sh

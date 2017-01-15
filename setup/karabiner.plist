@@ -5,15 +5,17 @@
 	<key>MigrationUtilitiesCurrentBundleIdentifer</key>
 	<string>org.pqrs.Karabiner</string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>593 1225 400 129 0 0 2560 1577 </string>
+	<string>1080 1087 400 129 0 0 2560 1577 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 889 620 392 0 0 2560 1577 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>1482 633 575 392 0 0 2560 1578 </string>
 	<key>SUFeedURL</key>
 	<string>https://pqrs.org/osx/karabiner/files/appcast.xml</string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-02T03:35:13Z</date>
+	<date>2016-06-11T15:41:55Z</date>
 	<key>configList</key>
 	<array>
 		<dict>
@@ -31,6 +33,14 @@
 			<string>config_1419580764_960526</string>
 			<key>name</key>
 			<string>NewItem</string>
+		</dict>
+		<dict>
+			<key>appendIndex</key>
+			<integer>3</integer>
+			<key>identify</key>
+			<string>config_1483066131_777281</string>
+			<key>name</key>
+			<string>New Profile</string>
 		</dict>
 	</array>
 	<key>config_1386448691_208548</key>
@@ -76,6 +86,14 @@
 	<dict/>
 	<key>config_1399532334_492987</key>
 	<dict>
+		<key>aaronjensen.kinesis</key>
+		<integer>1</integer>
+		<key>aaronjensen.kinesis.hyper</key>
+		<integer>1</integer>
+		<key>aaronjensen.kinesis.super</key>
+		<integer>1</integer>
+		<key>aaronjensen.kinesis.symbol_overlay</key>
+		<integer>1</integer>
 		<key>aaronjensen.semicolon_to_hyper</key>
 		<integer>1</integer>
 		<key>crazy</key>
@@ -86,39 +104,91 @@
 		<integer>1</integer>
 		<key>option.emacsmode_controlLeftbracket</key>
 		<integer>1</integer>
-		<key>option.emacsmode_controlPNBF_ex</key>
-		<integer>1</integer>
-		<key>option.emacsmode_optionBF</key>
-		<integer>1</integer>
-		<key>option.emacsmode_optionD</key>
+		<key>option.emacsmode_controlPNBF_nomodifiers</key>
 		<integer>1</integer>
 		<key>parameter.keyoverlaidmodifier_timeout</key>
-		<integer>500</integer>
+		<integer>300</integer>
 		<key>remap.commandR2optionR</key>
+		<integer>1</integer>
+		<key>remap.controlL2controlL_escape</key>
 		<integer>1</integer>
 		<key>remap.mbpro_f10f11f12</key>
 		<integer>1</integer>
 		<key>remap.mbpro_f7f8f9</key>
-		<integer>1</integer>
-		<key>remap.optionrcommandr</key>
 		<integer>1</integer>
 		<key>repeat.initial_wait</key>
 		<integer>300</integer>
 		<key>repeat.keyoverlaidmodifier_initial_wait</key>
 		<integer>100</integer>
 		<key>repeat.wait</key>
-		<integer>53</integer>
+		<integer>43</integer>
 	</dict>
 	<key>config_1419580764_960526</key>
 	<dict>
-		<key>notsave.automatically_enable_keyboard_device</key>
+		<key>aaronjensen.kinesis.hyper</key>
 		<integer>1</integer>
-		<key>notsave.automatically_enable_pointing_device</key>
+		<key>aaronjensen.kinesis.super</key>
+		<integer>1</integer>
+		<key>aaronjensen.kinesis.symbol_overlay</key>
 		<integer>1</integer>
 	</dict>
+	<key>config_1483066131_777281</key>
+	<dict/>
+	<key>isCheckUpdate</key>
+	<true/>
 	<key>isQuitByHand</key>
 	<false/>
+	<key>isShowSettingNameInStatusBar</key>
+	<false/>
+	<key>isStatusWindowEnabled</key>
+	<true/>
+	<key>isStatusWindowShowCapsLock</key>
+	<false/>
+	<key>isStatusWindowShowPointingButtonLock</key>
+	<true/>
+	<key>isStatusWindowShowStickyModifier</key>
+	<false/>
+	<key>isStatusbarEnable</key>
+	<true/>
+	<key>kAXNotifierDisabledInJavaApps</key>
+	<true/>
+	<key>kAXNotifierDisabledInMicrosoftOffice</key>
+	<true/>
+	<key>kAXNotifierDisabledInPreview</key>
+	<true/>
+	<key>kAXNotifierDisabledInQtApps</key>
+	<true/>
+	<key>kAXNotifierEnableDebuggingLog</key>
+	<false/>
+	<key>kIsAXNotifierEnabled</key>
+	<true/>
+	<key>kIsMigratedOverwriteKeyRepeat</key>
+	<true/>
+	<key>kIsOverwriteKeyRepeat</key>
+	<true/>
+	<key>kIsStatusWindowUseModifierSymbols</key>
+	<false/>
+	<key>kKarabinerPreferencesCheckboxFont</key>
+	<integer>0</integer>
+	<key>kKarabinerPreferencesHeight</key>
+	<real>1015</real>
+	<key>kKarabinerPreferencesWidth</key>
+	<real>845</real>
+	<key>kResumeAtLogin</key>
+	<true/>
+	<key>kUsePreparedSettings</key>
+	<true/>
 	<key>selectedIndex</key>
+	<integer>0</integer>
+	<key>statusWindowFontSize</key>
+	<integer>0</integer>
+	<key>statusWindowOpacity</key>
+	<integer>80</integer>
+	<key>statusWindowPosition</key>
+	<integer>3</integer>
+	<key>statusWindowTheme</key>
+	<integer>0</integer>
+	<key>statusWindowType</key>
 	<integer>0</integer>
 </dict>
 </plist>
