@@ -85,3 +85,5 @@ if [ $ITERM_PROFILE ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Emacs shells are loaded as interactive, but not login, so asdf must be sourced here
+[ -z $ASDF_SOURCED ] && [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
