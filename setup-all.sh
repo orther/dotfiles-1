@@ -51,6 +51,7 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Add DefaultKeyBindings
+mkdir -p ~/Library/KeyBindings
 ln -sfv $F/extra/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 # Install pow
