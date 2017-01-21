@@ -57,3 +57,8 @@ do
 
   ln -v -s "$F/$P" "$TARGET/$T"
 done
+
+# Add DefaultKeyBindings
+# For some reason, symlinks don't work, so we actually copy it each time.
+mkdir -p ~/Library/KeyBindings
+cp $F/extra/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
