@@ -34,7 +34,7 @@ export BUNDLER_EDITOR='/usr/local/bin/mvim -v'
 export TCH_BUNDLE_INSTALL=bundle
 
 # Android
-export ANDROID_HOME=${HOME}/Library/Android/sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
