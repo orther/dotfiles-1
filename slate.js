@@ -21,7 +21,7 @@ function bindAll() {
     "l:hyper" : "Slack",
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
-    "v:hyper" : "nvALT",
+    "v:hyper" : "Google Chrome Canary",
     // "x:hyper" : ["App Launcher for Inbox by Gmail App", "/Users/aaronjensen/Applications/Chrome\ Apps.localized/Default\ ajjmenfgmbpceneffopmikhahnkeebje.app"],
     // "x:hyper" : "Boxy",
     "x:hyper" : "Spark",
