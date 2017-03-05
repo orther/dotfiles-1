@@ -45,6 +45,7 @@ bindkey -M emacs '^P' history-substring-search-up
 bindkey -M emacs '^N' history-substring-search-down
 
 # Use C-z to switch back to fg
+# It also will clear the screen if there is anything typed already
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
       BUFFER="fg"
