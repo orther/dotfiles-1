@@ -23,8 +23,13 @@ git_remote_status_count() {
     fi
 }
 
+if [ -n "$TMUX" ]; then
+  local _reset_cursor=$'\e[0 q'
+else
+  local _reset_cursor=$'\e[2 q'
+fi
 
-PROMPT='%{$fg[blue]%}[%{$reset_color%}'
+PROMPT='%{${_reset_cursor}%}%{$fg[blue]%}[%{$reset_color%}'
 PROMPT+='%~'
 # PROMPT+='$(git_prompt_info)$(git_remote_status_count)'
 PROMPT+="\$(git-radar --zsh) "
