@@ -21,6 +21,7 @@ function bindAll() {
     "l:hyper" : "Slack",
     "m:hyper" : "Messages",
     "s:hyper" : "Safari",
+    "w:hyper" : "Xcode",
     "x:hyper" : "Spark",
     "z:hyper" : "Zeplin"
   });
