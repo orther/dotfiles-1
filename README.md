@@ -47,5 +47,16 @@ In Chrome, do `:source /your/home/.cvimrc`.
 
 ### Kinesis Keyboard stuff
 
+Karabiner does not work on Sierra, so instead we use a combination of
+[hammerspoon][] for the symbol layer/esc on capslock and karabiner-elements for
+the hyper key.
+
+Install
+[wwwjfy's fork of Karabiner-Elements](https://github.com/wwwjfy/Karabiner-Elements/releases) unless
+his [pull request](https://github.com/tekezo/Karabiner-Elements/pull/247) is merged.
+
+Use f_qwerty.txt for kinesis.
+
 ![Symbol
 overlay](http://screenshots-dx37.s3.amazonaws.com/monosnap/kinesis-layout-empty.jpg.png)
+[hamerspoon]: http://www.hammerspoon.org/

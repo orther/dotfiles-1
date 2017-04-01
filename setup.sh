@@ -13,6 +13,7 @@ do
   if [[ "$P" == setup* ]]; then continue; fi
   if [ "$P" = "extra" ]; then continue; fi
   if [ "$P" = "zgen" ]; then continue; fi
+  if [ "$P" = "dotconfig" ]; then continue; fi
 
   # ensure permissions
   chmod -R o-rwx,g-rwx $P
@@ -34,6 +35,33 @@ do
   # create link
   echo -n "Link "
   ln -v -s "$F/$P" "$HOME/.$P"
+done
+
+cd `dirname $0`/dotconfig
+mkdir -p "$HOME/.config"
+
+for P in *
+do
+  # ensure permissions
+  chmod -R o-rwx,g-rwx $P
+
+  # skip existing links
+  if [ -h "$HOME/.config/$P" ]; then continue; fi
+
+  # move existing dir out of the way
+  if [ -e "$HOME/.config/$P" ]; then
+    if [ -e "$HOME/.config/__$P" ]; then
+      echo "want to override $HOME/.config/$P but backup exists"
+      continue;
+    fi
+
+    echo -n "Backup "
+    mv -v "$HOME/.config/$P" "$HOME/.config/__$P"
+  fi
+
+  # create link
+  echo -n "Link "
+  ln -v -s "$F/dotconfig/$P" "$HOME/.config/$P"
 done
 
 # Karabiner

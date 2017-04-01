@@ -1,0 +1,21 @@
+* Hammerspoon is used to turn F18 into ESC on tap and Symbol overlay on hold
+[caps]>[F18]
+* Karabiner-Elements is used to make F19 super (cmd+opt+ctrl)
+[lalt]>[F19]
+* Karabiner-Elements is used to make F20 hyper (cmd+opt+ctrl+shift)
+[home]>[F20]
+* Karabiner-Elements turns this back into a regular semicolon so that other
+* keyboard semicolons are treated as hyper
+[;]>[f21]
+[up]>[down]
+[down]>[up]
+[scroll]>[vol-]
+[prtscr]>[mute]
+[kp=]>[kp=mac]
+[pause]>[vol+]
+[end]>[ralt]
+[lctrl]>[lalt]
+[delete]>[rctrl]
+[bspace]>[lwin]
+[rctrl]>[bspace]
+[rwin]>[delete]

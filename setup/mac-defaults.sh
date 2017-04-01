@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Turbo key repeat
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 1
+
 # Gratuitously stolen from @mathiasbynens
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
