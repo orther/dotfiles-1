@@ -6,7 +6,18 @@
     },
     "profiles": [
         {
-            "devices": [],
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 610,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false
+                }
+            ],
             "fn_function_keys": {
                 "f1": "display_brightness_decrement",
                 "f10": "mute",
@@ -28,13 +39,13 @@
                     "left_option",
                     "left_command"
                 ],
-                "semicolon": [
+                "f20": [
                     "left_control",
                     "left_option",
                     "left_command",
                     "left_shift"
                 ],
-                "f20": [
+                "semicolon": [
                     "left_control",
                     "left_option",
                     "left_command",
