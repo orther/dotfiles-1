@@ -6,27 +6,6 @@ S.configAll({
 
 function bindAll() {
   /*
-   * Quick app switching and launching
-   * hyper + key to launch app or switch to it.
-   * Use Karabiner to create hyper key, I use holding ';'.
-   */
-  bindQuickSwitch({
-    // "a:hyper" : "Atom",
-    "c:hyper" : "Google Chrome",
-    "f:hyper" : "Firefox",
-    "g:hyper" : ["Highfive", "/Users/aaronjensen/Applications/HighfiveApp.app"],
-    "i:hyper" : "iTerm",
-    "j:hyper" : "Emacs",
-    "k:hyper" : "Skype",
-    "l:hyper" : "Slack",
-    "m:hyper" : "Messages",
-    "s:hyper" : "Safari",
-    "w:hyper" : "Xcode",
-    "x:hyper" : "Spark",
-    "z:hyper" : "Zeplin"
-  });
-
-  /*
    * Size and move windows
    * Press binding twice to toggle between screens
    */
@@ -150,24 +129,6 @@ function bindWindowSizes(bindings) {
     });
   });
 };
-
-function bindQuickSwitch(bindings) {
-  _.each(bindings, function(app, key) {
-    var appPath;
-    if (typeof app === "string") {
-      appPath = "'/Applications/" + app + ".app'"
-    } else {
-      appPath = app[1]
-      app = app[0]
-    }
-    key = expandModifiers(key);
-
-    S.bind(key, function() {
-      S.op("focus", { "app" : app }).run() ||
-        S.shell("/usr/bin/open " + appPath);
-    });
-  });
-}
 
 function bindHarvestCommands(bindings) {
   var debug = false;
