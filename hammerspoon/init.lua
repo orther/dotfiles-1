@@ -5,7 +5,7 @@ super = {'ctrl', 'alt', 'cmd'}
 quickSwitchBindings = {
   {hyper, 'c', '/Applications/Google Chrome.app'},
   {hyper, 'f', '/Applications/Firefox.app'},
-  {hyper, 'g', '/Users/aaronjensen/Applications/HighfiveApp.app'},
+  {hyper, 'g', os.getenv('HOME') .. '/Applications/HighfiveApp.app'},
   {hyper, 'i', '/Applications/iTerm.app'},
   {hyper, 'j', '/Applications/Emacs.app'},
   {hyper, 'k', '/Applications/Skype.app'},
