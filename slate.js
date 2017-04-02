@@ -25,28 +25,6 @@ function bindAll() {
   });
 
   /*
-   * NOTE: I moved these to Keyboard Maestro, which costs $ but has
-   * some great features for this.
-   *
-   * These rely on two things being installed:
-   * $ brew install terminal-notifier
-   * $ rvmsudo rvm system do gem install hcl
-   *
-   * Plus the two scripts in my bin folder, hcl-start and hcl-stop.
-   *
-   * You will need to login and set up your tasks:
-   * $ rvm system do hcl tasks
-   */
-  // bindHarvestCommands({
-  //   "t:h,hyper" : { "name" : "Tch", "start" : "7700466 1658603" },
-  //   "a:h,hyper" : { "name" : "Tch Android", "start" : "7876113 1658609" },
-  //   "l:h,hyper" : { "name" : "Tch Labs", "start" : "7968887 1658603" },
-  //   "i:h,hyper" : { "name" : "Internal", "start" : "7228599 1667144" },
-  //   "n:h,hyper" : { "name" : "All Hands", "start" : "7228427 1667144" },
-  //   "s:h,hyper" : { "name" : "Stop", "stop" : true },
-  // })
-
-  /*
    * Miscellaneous bindings
    */
   S.bindAll({
@@ -104,13 +82,6 @@ var windowSizes = createWindowSizes(fullscreen, {
   },
 });
 
-var harvestTasks = {
-  "Tch" : {
-    "project_id" : "",
-    "task_id" : ""
-  }
-}
-
 function bindWindowSizes(bindings) {
   _.each(bindings, function(size, key) {
     key = expandModifiers(key);
@@ -129,25 +100,6 @@ function bindWindowSizes(bindings) {
     });
   });
 };
-
-function bindHarvestCommands(bindings) {
-  var debug = false;
-  _.each(bindings, function(task, key) {
-    key = expandModifiers(key);
-    if (task.start) {
-      S.bind(key, function() {
-        var result = S.shell("/Users/aaronjensen/.bin/hcl-start '" +
-                          task.name + "' " + task.start, debug);
-        if (debug) S.log(result);
-      });
-    } else if (task.stop ) {
-      S.bind(key, function() {
-        var result = S.shell("/Users/aaronjensen/.bin/hcl-stop", debug);
-        if (debug) S.log(result);
-      });
-    }
-  });
-}
 
 /*
  * Utility functions
