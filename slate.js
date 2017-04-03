@@ -10,17 +10,17 @@ function bindAll() {
    * Press binding twice to toggle between screens
    */
   bindWindowSizes({
-    "i:ctrl,cmd"        : "fullscreen",
-    "h:ctrl,cmd"        : "left",
-    "k:ctrl,cmd"        : "top",
-    "l:ctrl,cmd"        : "right",
-    "j:ctrl,cmd"        : "bottom",
+    // "i:ctrl,cmd"        : "fullscreen",
+    // "h:ctrl,cmd"        : "left",
+    // "k:ctrl,cmd"        : "top",
+    // "l:ctrl,cmd"        : "right",
+    // "j:ctrl,cmd"        : "bottom",
     "h:j,super"         : "topLeft",
     "k:j,super"         : "topRight",
     "l:j,super"         : "bottomRight",
     "j:j,super"         : "bottomLeft",
-    "l:ctrl,cmd,shift"  : "rightThird",
-    "h:ctrl,cmd,shift"  : "leftTwoThirds",
+    // "l:ctrl,cmd,shift"  : "rightThird",
+    // "h:ctrl,cmd,shift"  : "leftTwoThirds",
     "m:j,super"         : "middleHalf"
   });
 
