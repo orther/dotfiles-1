@@ -2,6 +2,8 @@
 k = hs.hotkey.modal.new()
 
 fast_delay = 1000
+-- If you hold capslock for this long and then let go, ESC will not be sent.
+cancel_delay_seconds = 0.3
 
 bindings = {
   {'o', {}, '-'},         -- o -> -
@@ -30,8 +32,13 @@ for i, mapping in ipairs(bindings) do
   end)
 end
 
+symbolResetTimer = hs.timer.delayed.new(cancel_delay_seconds, function()
+  k.triggered = true
+end)
+
 -- Enter Symbol Mode when F18 (Capslock) is pressed
 pressedF18 = function()
+  symbolResetTimer:start()
   k.triggered = false
   k:enter()
 end
@@ -39,6 +46,7 @@ end
 -- Leave Symbol Mode when F18 (Capslock) is pressed,
 -- send ESCAPE if no other keys are pressed
 releasedF18 = function()
+  symbolResetTimer:stop()
   k:exit()
   if not k.triggered then
     hs.eventtap.keyStroke({}, 'ESCAPE', fast_delay)
