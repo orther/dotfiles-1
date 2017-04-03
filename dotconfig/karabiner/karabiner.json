@@ -55,13 +55,11 @@
             "selected": true,
             "simple_modifications": {
                 "caps_lock": "left_control",
-                "f21": "semicolon",
-                "f18": "f17"
+                "f21": "semicolon"
             },
             "standalone_keys": {
                 "caps_lock": "escape",
-                "semicolon": "semicolon",
-                "f18": "escape"
+                "semicolon": "semicolon"
             },
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,

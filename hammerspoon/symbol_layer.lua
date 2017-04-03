@@ -24,21 +24,26 @@ bindings = {
 for i, mapping in ipairs(bindings) do
   k:bind({}, mapping[1], function()
     hs.eventtap.keyStroke(mapping[2], mapping[3], fast_delay)
+    k.triggered = true
   end, nil, function()
     hs.eventtap.keyStroke(mapping[2], mapping[3], fast_delay)
   end)
 end
 
--- Enter Symbol Mode when F17 (Capslock) is pressed
-pressedF17 = function()
+-- Enter Symbol Mode when F18 (Capslock) is pressed
+pressedF18 = function()
+  k.triggered = false
   k:enter()
 end
 
--- Leave Symbol Mode when F17 (Capslock) is pressed,
--- Karabiner-Elements will send ESC if Caplock is tapped on its own
-releasedF17 = function()
+-- Leave Symbol Mode when F18 (Capslock) is pressed,
+-- send ESCAPE if no other keys are pressed
+releasedF18 = function()
   k:exit()
+  if not k.triggered then
+    hs.eventtap.keyStroke({}, 'ESCAPE', fast_delay)
+  end
 end
 
 -- Bind the Symbol key
-hs.hotkey.bind({}, 'F17', pressedF17, releasedF17)
+hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
