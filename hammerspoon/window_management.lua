@@ -25,9 +25,12 @@ resizeWindow = function(size)
 
   win:move(size)
 
-  -- if it hasn't moved, try the next screen
+  -- If it hasn't moved, try the next screen
   if originalSize:equals(win:frame()) and screen:id() ~= screen:next():id() then
     win:move(size, screen:next())
+    -- Move it one more time as some windows don't quite get into place after
+    -- the first move
+    win:move(size)
   end
 end
 
