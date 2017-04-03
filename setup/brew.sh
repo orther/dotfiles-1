@@ -13,7 +13,6 @@ brew install bash-completion
 brew install brew-cask
 brew install ctags
 brew install direnv
-brew install fasd
 brew install gist
 brew install git
 brew install git-flow
@@ -48,8 +47,8 @@ brew install wget
 brew install zsh
 
 # brew tap railwaycat/emacsmacport
-brew install emacs --with-cocoa --with-librsvg --with-gnutls --with-imagemagick --devel
-tic -o ~/.terminfo /usr/local/Cellar/emacs/24.5/share/emacs/24.5/etc/e/eterm-color.ti
+brew install emacs --with-cocoa --with-librsvg --with-gnutls --with-imagemagick@6 --with-modules
+tic -o ~/.terminfo /usr/local/Cellar/emacs/25.1/share/emacs/25.1/etc/e/eterm-color.ti
 
 # brew install emacs-mac --with-spacemacs-icon
 brew install macvim --with-cscope --with-luajit
@@ -63,7 +62,6 @@ brew cask install android-file-transfer
 brew cask install caffeine
 brew cask install dropbox
 brew cask install firefox
-brew cask install flowdock
 brew cask install flux
 brew cask install gitx-rowanj
 brew cask install google-chrome
@@ -72,7 +70,7 @@ brew cask install harvest
 brew cask install iterm2
 brew cask install karabiner
 brew cask install lastpass-universal
-brew cask install mattr-slate
+brew cask install hammerspoon
 brew cask install p4merge
 brew cask install screenhero
 brew cask install silverlight
