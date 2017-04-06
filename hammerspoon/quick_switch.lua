@@ -2,7 +2,6 @@
 quickSwitchBindings = {
   {hyper, 'c', '/Applications/Google Chrome.app'},
   {hyper, 'f', '/Applications/Firefox.app'},
-  {hyper, 'g', os.getenv('HOME') .. '/Applications/HighfiveApp.app'},
   {hyper, 'i', '/Applications/iTerm.app'},
   {hyper, 'j', '/Applications/Emacs.app'},
   {hyper, 'k', '/Applications/Skype.app'},
@@ -16,6 +15,16 @@ quickSwitchBindings = {
 
 for i, mapping in ipairs(quickSwitchBindings) do
   hs.hotkey.bind(mapping[1], mapping[2], function()
-                   hs.application.launchOrFocus(mapping[3])
+    hs.application.launchOrFocus(mapping[3])
   end)
 end
+
+hs.hotkey.bind(hyper, 'g', function()
+  local highfive = hs.application.find('Highfive')
+
+  if highfive then
+    highfive:mainWindow():focus()
+  else
+    hs.application.launchOrFocus(os.getenv('HOME') .. '/Applications/HighfiveApp.app')
+  end
+end)
