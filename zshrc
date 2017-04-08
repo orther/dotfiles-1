@@ -86,6 +86,10 @@ eval "$(direnv hook zsh)"
 
 fpath=("$HOME/.zsh" $fpath)
 
+if command -v most > /dev/null 2>&1; then
+  export PAGER="most"
+fi
+
 if [ $ITERM_PROFILE ]; then
   test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
   echo -ne "\033]6;1;bg;red;brightness;28\a"

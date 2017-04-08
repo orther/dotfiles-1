@@ -26,6 +26,7 @@ brew install libdvdcss
 brew install libevent
 brew install libtiff
 brew install memcached
+brew install most
 brew install moreutils
 brew install mysql
 brew install pcre
