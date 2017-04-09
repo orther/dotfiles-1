@@ -23,12 +23,63 @@ bindings = {
   {'.', {'shift'}, '.'},  -- . -> >
 }
 
+modifierCombinations = {}
+for _, ctrl in ipairs({'ctrl', false}) do
+  for _, cmd in ipairs({'cmd', false}) do
+    for _, shift in ipairs({'shift', false}) do
+      for _, alt in ipairs({'alt', false}) do
+        local combination = {}
+        if ctrl then table.insert(combination, ctrl) end
+        if cmd then table.insert(combination, cmd) end
+        if shift then table.insert(combination, shift) end
+        if alt then table.insert(combination, alt) end
+
+        table.insert(modifierCombinations, combination)
+      end
+    end
+  end
+end
+
+function contains(tbl, value)
+  for _, v in ipairs(tbl) do
+    if v == value then
+      return true
+    end
+  end
+
+  return false
+end
+
+function union(a, b)
+  local ab = {}
+  for _, v in ipairs(a) do
+    table.insert(ab, v)
+  end
+
+  for _, v in ipairs(b) do
+    if not contains(ab, v) then
+      table.insert(ab, v)
+    end
+  end
+
+  return ab
+end
+
+function withAllModifiers(fn)
+  for _, modifiers in ipairs(modifierCombinations) do
+    fn(modifiers)
+  end
+end
+
 for i, mapping in ipairs(bindings) do
-  k:bind({}, mapping[1], function()
-    hs.eventtap.keyStroke(mapping[2], mapping[3], fast_delay)
-    k.triggered = true
-  end, nil, function()
-    hs.eventtap.keyStroke(mapping[2], mapping[3], fast_delay)
+  withAllModifiers(function(modifiers)
+    local strokeModifiers = union(modifiers, mapping[2])
+    k:bind(modifiers, mapping[1], function()
+      hs.eventtap.keyStroke(strokeModifiers, mapping[3], fast_delay)
+      k.triggered = true
+    end, nil, function()
+      hs.eventtap.keyStroke(strokeModifiers, mapping[3], fast_delay)
+    end)
   end)
 end
 
@@ -37,21 +88,27 @@ symbolResetTimer = hs.timer.delayed.new(cancel_delay_seconds, function()
 end)
 
 -- Enter Symbol Mode when F18 (Capslock) is pressed
-pressedF18 = function()
-  symbolResetTimer:start()
-  k.triggered = false
-  k:enter()
+function pressedF18(modifiers)
+  return function()
+    symbolResetTimer:start()
+    k.triggered = false
+    k:enter()
+  end
 end
 
 -- Leave Symbol Mode when F18 (Capslock) is pressed,
 -- send ESCAPE if no other keys are pressed
-releasedF18 = function()
-  symbolResetTimer:stop()
-  k:exit()
-  if not k.triggered then
-    hs.eventtap.keyStroke({}, 'ESCAPE', fast_delay)
+function releasedF18(modifiers)
+  return function()
+    symbolResetTimer:stop()
+    k:exit()
+    if not k.triggered then
+      hs.eventtap.keyStroke(modifiers, 'ESCAPE', fast_delay)
+    end
   end
 end
 
 -- Bind the Symbol key
-hs.hotkey.bind({}, 'F18', pressedF18, releasedF18)
+withAllModifiers(function(modifiers)
+  hs.hotkey.bind(modifiers, 'F18', pressedF18(modifiers), releasedF18(modifiers))
+end)
