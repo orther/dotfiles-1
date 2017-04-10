@@ -73,6 +73,11 @@ function enableSymbolLayer()
     triggered = true
 
     local key = hs.keycodes.map[event:getKeyCode()]
+
+    if key == 'space' then
+      return false
+    end
+
     local remap = symbols[key]
     if remap then
       local mods = tableKeys(event:getFlags())
