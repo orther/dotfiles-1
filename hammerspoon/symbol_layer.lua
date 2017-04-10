@@ -87,7 +87,7 @@ function enableSymbolLayer()
   end)
 
   -- This tap handles F18 (capslock) with any modifier and is enabled right away.
-  hs.eventtap.new({hs.eventtap.event.types.keyDown, hs.eventtap.event.types.keyUp}, function(event)
+  return hs.eventtap.new({hs.eventtap.event.types.keyDown, hs.eventtap.event.types.keyUp}, function(event)
     local key = hs.keycodes.map[event:getKeyCode()]
     -- Ignore all events but f18
     if key ~= 'f18' then
@@ -116,4 +116,5 @@ function enableSymbolLayer()
   end):start()
 end
 
-enableSymbolLayer()
+-- Store this in a global so it doesn't get GC'd
+symbolLayerTap = enableSymbolLayer()
