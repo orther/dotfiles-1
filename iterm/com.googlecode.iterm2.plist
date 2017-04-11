@@ -1370,11 +1370,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>930 717 700 622 0 0 2560 1577 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>207 336 918 498 0 0 1440 877 </string>
+	<string>207 297 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>835 4 604 873 0 0 1440 877 </string>
+	<string>720 4 720 873 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>840 17 1482 1560 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1849,6 +1849,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -2553,7 +2555,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>fd20:ee27:f0f0:43c6:1d64:ea4e:a83c:297e</string>
+			<string>192.168.1.10</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -2561,7 +2563,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh fd20:ee27:f0f0:43c6:1d64:ea4e:a83c:297e</string>
+			<string>ssh 192.168.1.10</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2608,7 +2610,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>95D4D054-010D-484C-9CFE-2347296BEED8</string>
+			<string>9867B766-8F2C-4106-ADB2-45CB773A7F5F</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -2852,7 +2854,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>Working Directory</key>
 			<string></string>
 		</dict>
@@ -3044,7 +3046,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>192.168.1.10</string>
+			<string>fd20:ee27:f0f0:43c6:1d64:ea4e:a83c:297e</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -3052,7 +3054,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>ssh 192.168.1.10</string>
+			<string>ssh fd20:ee27:f0f0:43c6:1d64:ea4e:a83c:297e</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3099,7 +3101,7 @@
 				<real>0.93353170156478882</real>
 			</dict>
 			<key>Guid</key>
-			<string>206F4FC2-A58A-4632-8EE4-5BF5AB6D0554</string>
+			<string>6668475C-06C6-4936-8AAC-93A7806EA30E</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -3343,7 +3345,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>Working Directory</key>
 			<string></string>
 		</dict>
@@ -3476,7 +3478,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-08T01:06:03Z</date>
+	<date>2017-04-10T16:27:21Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
