@@ -35,6 +35,9 @@ function tableKeys(tbl)
   return ret
 end
 
+EVENTPROPERTY_EVENTSOURCEUSERDATA = 42
+USERDATA_LOCAL = 55555
+
 function enableSymbolLayer()
   local symbols = {
     o = {{}, '-'},            -- o -> -
@@ -65,8 +68,8 @@ function enableSymbolLayer()
   local tap = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
     -- Check if this event is from the keyboard or from us. We need to ignore
     -- events from us.
-    local processId = event:getProperty(hs.eventtap.event.properties.eventSourceUnixProcessID)
-    if processId > 0 then
+    local userData = event:getProperty(EVENTPROPERTY_EVENTSOURCEUSERDATA)
+    if userData == USERDATA_LOCAL then
       return false
     end
 
@@ -84,7 +87,8 @@ function enableSymbolLayer()
       local newMods = itableUnion(mods, remap[1])
       local newKey = remap[2]
 
-      hs.eventtap.keyStroke(newMods, newKey, fast_delay)
+      hs.eventtap.event.newKeyEvent(newMods, newKey, true):setProperty(EVENTPROPERTY_EVENTSOURCEUSERDATA, USERDATA_LOCAL):post()
+      hs.eventtap.event.newKeyEvent(newMods, newKey, false):setProperty(EVENTPROPERTY_EVENTSOURCEUSERDATA, USERDATA_LOCAL):post()
     end
 
     -- Do not send event on
