@@ -1,6 +1,3 @@
--- The default delay is too slow, making key repeating very slow
-fast_delay = 1000
-
 function tableContainsValue(tbl, value)
   for _, v in ipairs(tbl) do
     if v == value then
