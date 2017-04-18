@@ -23,14 +23,15 @@ disableReadlineKeyBindingsIn = {
 }
 
 for _, binding in ipairs(readlineKeyBindings) do
-  readlineKeys:bind(binding[1], binding[2], function()
+  local stroke = function()
     hs.eventtap.keyStroke(binding[3], binding[4], fast_delay)
-  end)
+  end
+  readlineKeys:bind(binding[1], binding[2], stroke, nil, stroke)
 end
 
 function applicationWatcher(appName, eventType, appObject)
   if eventType == hs.application.watcher.activated then
-    print(appName)
+    -- print(appName)
     local isMatch = false
     for _, app in ipairs(disableReadlineKeyBindingsIn) do
       if appName == app then
