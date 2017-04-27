@@ -15,6 +15,8 @@ readlineKeyBindings = {
   {{'ctrl'}, 'b', {}, 'left'},
   {{'ctrl'}, 'n', {}, 'down'},
   {{'ctrl'}, 'p', {}, 'up'},
+
+  {{'ctrl'}, 'g', {}, 'escape'},
 }
 
 disableReadlineKeyBindingsIn = {
