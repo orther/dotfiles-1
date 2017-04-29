@@ -28,3 +28,9 @@ hs.hotkey.bind(hyper, 'g', function()
     hs.application.launchOrFocus(os.getenv('HOME') .. '/Applications/HighfiveApp.app')
   end
 end)
+
+hs.hotkey.bind(hyper, 'n', function()
+  hs.application.launchOrFocus('/Applications/Emacs.app')
+  hs.eventtap.keyStroke({'ctrl'}, 'c', fast_delay)
+  hs.eventtap.keyStroke({}, 'c', fast_delay)
+end)
